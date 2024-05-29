@@ -1,0 +1,37 @@
+name: release
+
+on:
+  push:
+    tags:
+      - '*'
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Download artifacts
+      uses: actions/download-artifact@v4
+      with:
+        name: Build-linux
+        path: ./artifacts/linux/
+    - uses: actions/download-artifact@v4
+      with:
+        name: Build-windows
+        path: ./artifacts/windows/
+    - uses: actions/download-artifact@v4
+      with:
+        name: Build-macos
+        path: ./artifacts/macos/
+
+    - name: Compress artifacts
+      run: |
+        tar -czvf build-linux.tar.gz ./artifacts/linux/
+        tar -czvf build-windows.tar.gz ./artifacts/windows/
+        tar -czvf build-mac.tar.gz ./artifacts/macos/
+        
+    - uses: ncipollo/release-action@v1
+      with:
+        artifacts: "build-linux.tar.gz,build-windows.zip,build-mac.tar.gz"
+    name: Create Release
