@@ -21,9 +21,9 @@ in a more visual and engaging way.
 
 To install the program, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/yourusername/cpp-to-svg.git`
-2. Navigate to the project directory: `cd cpp-to-svg`
-3. Compile the program: `g++ -o cpp_to_svg main.cpp`
+1. Clone the repository: `git clone https://github.com/JoranVandenbroucke/CodeToSVG.git`
+2. Navigate to the project directory: `cd CodeToSVG`
+3. Compile the program: `zig build`
 
 ## Usage
 
