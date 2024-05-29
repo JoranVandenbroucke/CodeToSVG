@@ -1,0 +1,61 @@
+name: Build
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos, ubuntu, windows]
+
+    steps:
+    - if: matrix.os == 'windows'
+      run: git config --global core.autocrlf false
+    - uses: actions/checkout@v2
+      with:
+        submodules: true
+    - uses: goto-bus-stop/setup-zig@v2
+      with:
+        version: master
+    - run: zig fmt --check .
+    - run: zig build --release-safe --cache-dir ./zig-cache --output-dir ./zig-out/bin
+        - name: Archive files
+      run: |
+        tar -cvf output-${{ matrix.os }}.tar ./zig-out/bin/*
+    - name: "Create Release"
+      uses: "actions/github-script@v6"
+      with:
+        github-token: "${{ secrets.GITHUB_TOKEN }}"
+        script: |
+          try {
+            const response = await github.rest.repos.createRelease({
+              draft: false,
+              generate_release_notes: true,
+              name: process.env.RELEASE_TAG,
+              owner: context.repo.owner,
+              prerelease: false,
+              repo: context.repo.repo,
+              tag_name: process.env.RELEASE_TAG,
+            });
+
+            core.exportVariable('RELEASE_ID', response.data.id);
+            core.exportVariable('RELEASE_UPLOAD_URL', response.data.upload_url);
+          } catch (error) {
+            core.setFailed(error.message);
+          }
+    - name: Upload Release Asset
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ env.RELEASE_UPLOAD_URL }}
+        asset_path: ./output-${{ matrix.os }}.tar
+        asset_name: output-${{ matrix.os }}.tar
+        asset_content_type: application/tar
