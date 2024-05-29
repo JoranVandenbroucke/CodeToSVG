@@ -25,7 +25,7 @@ jobs:
     - uses: goto-bus-stop/setup-zig@v2
       with:
         version: master
-    - run: zig fmt --check .
+    - run: zig fmt --check ./src
     - run: zig build --release-safe --cache-dir ./zig-cache --output-dir ./zig-out/bin
     - name: "Archive files"
       run: |

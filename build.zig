@@ -4,8 +4,8 @@ const std = @import("std");
 // declaratively construct a build graph that will be executed by an external
 // runner.
 pub fn build(b: *std.Build) void {
-    const clap_mod = b.addModule("clap", .{ .root_source_file =  b.path("zig-clap/clap.zig" ) });
-    const yaml_mod = b.addModule("yaml", .{ .root_source_file =  b.path("zig-yaml/src/yaml.zig" ) });
+    const clap_mod = b.addModule("clap", .{ .root_source_file = b.path("zig-clap/clap.zig") });
+    const yaml_mod = b.addModule("yaml", .{ .root_source_file = b.path("zig-yaml/src/yaml.zig") });
     // Standard target options allows the person running `zig build` to choose
     // what target to build for. Here we do not override the defaults, which
     // means any target is allowed, and the default is native. Other options
@@ -51,5 +51,4 @@ pub fn build(b: *std.Build) void {
     if (b.args) |args| {
         run_cmd.addArgs(args);
     }
-
 }

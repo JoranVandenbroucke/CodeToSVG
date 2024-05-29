@@ -202,7 +202,7 @@ pub fn main() !void {
             currentLine = token.line;
             charHeight += style.font_size;
             var charPos = token.char;
-            if(charPos != 0) charPos -= 1;
+            if (charPos != 0) charPos -= 1;
 
             startText = try std.fmt.allocPrint(std.heap.page_allocator,
                 \\
@@ -218,7 +218,7 @@ pub fn main() !void {
         , .{ color, lexeme });
         defer std.heap.page_allocator.free(lineNr);
 
-        if ( token.char < previousChar or token.char - previousChar == 1) {
+        if (token.char < previousChar or token.char - previousChar == 1) {
             try outputFile.writer().print("{s}", .{lineNr});
         } else {
             try outputFile.writer().print("\n{s}", .{lineNr});
