@@ -27,8 +27,3 @@ jobs:
           version: master
       - run: zig fmt --check ./src
       - run: zig build --release=safe
-      - uses: actions/upload-artifact@v4
-        with:
-          name: Build-${{ matrix.os }}
-          path: ./zig-out/
-          retention-days: 1
