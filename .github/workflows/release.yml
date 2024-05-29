@@ -14,8 +14,8 @@ jobs:
     - name: Download artifacts
       uses: actions/download-artifact@v4
       with:
-        name: Build-linux
-        path: ./artifacts/linux/
+        name: Build-ubuntu
+        path: ./artifacts/ubuntu/
     - uses: actions/download-artifact@v4
       with:
         name: Build-windows
@@ -27,11 +27,11 @@ jobs:
 
     - name: Compress artifacts
       run: |
-        tar -czvf build-linux.tar.gz ./artifacts/linux/
+        tar -czvf build-ubuntu.tar.gz ./artifacts/ubuntu/
         tar -czvf build-windows.tar.gz ./artifacts/windows/
-        tar -czvf build-mac.tar.gz ./artifacts/macos/
-        
+        tar -czvf build-macos.tar.gz ./artifacts/macos/
+
     - uses: ncipollo/release-action@v1
       with:
-        artifacts: "build-linux.tar.gz,build-windows.zip,build-mac.tar.gz"
+        artifacts: "build-ubuntu.tar.gz,build-windows.tar.gz,build-macos.tar.gz"
     name: Create Release
