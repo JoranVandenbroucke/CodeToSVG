@@ -1,3 +1,5 @@
+![build workflow](https://github.com/JoranVandenbroucke/CodeToSVG/actions/workflows/Build.yml/badge.svg)
+
 # C++ to SVG Converter
 
 I originally started this to learn ZIG Lang.
