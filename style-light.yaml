@@ -1,0 +1,49 @@
+background_color: "#f5f5f5"
+close_color: "#ff867c"
+minimize_color: "#ffe775"
+maximize_color: "#7ed957"
+line_number_color: "#b3b3b3"
+fallback_color: "#3b3b3b"
+font_size: 12
+padding: 0.05
+token_groups:
+  - name: Parentheses
+    tokens:
+      - LeftParen
+      - RightParen
+      - LeftSquare
+      - RightSquare
+      - LeftCurly
+      - RightCurly
+    color: "#d6e685"
+  - name: Operators
+    tokens:
+      - LessThan
+      - GreaterThan
+      - Equal
+      - Plus
+      - Minus
+      - Asterisk
+      - Slash
+      - Hash
+      - Dot
+      - Comma
+      - Colon
+      - Semicolon
+      - SingleQuote
+      - DoubleQuote
+      - Pipe
+      - Ampersant
+    color: "#90beff"
+  - name: Comment
+    tokens:
+      - Comment
+    color: "#b3d3b3"
+  - name: Number
+    tokens:
+      - Number
+    color: "#ffab85"
+  - name: Keyword
+    tokens:
+      - Keyword
+    color: "#ff7851"

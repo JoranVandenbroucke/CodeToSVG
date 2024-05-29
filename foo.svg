@@ -1,0 +1,85 @@
+<svg width="450" height="226" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="450" height="226" rx="20" fill="#2e3440" />
+    <circle cx="26" cy="26" r="6" fill="#bf616a" />
+    <!-- Orange Button -->
+    <circle cx="46" cy="26" r="6" fill="#ebcb8b" />
+    <!-- Green Button -->
+    <circle cx="66" cy="26" r="6" fill="#a3be8c" />
+    <text fill="#4c566a" x="26" y="64" font-size="12">1.</text>
+    <text fill="#4c566a" x="26" y="76" font-size="12">2.</text>
+    <text fill="#4c566a" x="26" y="88" font-size="12">3.</text>
+    <text fill="#4c566a" x="26" y="100" font-size="12">4.</text>
+    <text fill="#4c566a" x="26" y="112" font-size="12">5.</text>
+    <text fill="#4c566a" x="26" y="124" font-size="12">6.</text>
+    <text fill="#4c566a" x="26" y="136" font-size="12">7.</text>
+    <text fill="#4c566a" x="26" y="148" font-size="12">8.</text>
+    <text fill="#4c566a" x="26" y="160" font-size="12">9.</text>
+    <text fill="#4c566a" x="26" y="172" font-size="12">10.</text>
+    <text fill="#4c566a" x="26" y="184" font-size="12">11.</text>
+    <text fill="#4c566a" x="26" y="196" font-size="12">12.</text>
+    <text fill="#4c566a" x="26" y="208" font-size="12">13.</text>
+    <text fill="#4c566a" x="52" y="64" font-size="12">
+<tspan fill="#7b88a5">// my function</tspan>
+</text>
+    <text fill="#4c566a" x="52" y="76" font-size="12">
+<tspan fill="#81a1c1">int</tspan>
+<tspan fill="#eceff4">foo</tspan>
+<tspan fill="#d08770">(</tspan><tspan fill="#81a1c1">int</tspan>
+<tspan fill="#eceff4">n</tspan><tspan fill="#d08770">)</tspan>
+</text>
+    <text fill="#4c566a" x="52" y="88" font-size="12">
+<tspan fill="#d08770">{</tspan>
+</text>
+    <text fill="#4c566a" x="76" y="100" font-size="12">
+
+<tspan fill="#81a1c1">int</tspan>
+<tspan fill="#eceff4">sum</tspan>
+<tspan fill="#d08770">{</tspan><tspan fill="#d08770">}</tspan><tspan fill="#5e81ac">;</tspan>
+</text>
+    <text fill="#4c566a" x="76" y="112" font-size="12">
+<tspan fill="#81a1c1">for</tspan>
+<tspan fill="#d08770">(</tspan>
+<tspan fill="#81a1c1">int</tspan>
+<tspan fill="#eceff4">i</tspan><tspan fill="#d08770">{</tspan><tspan fill="#d08770">}</tspan><tspan fill="#5e81ac">;</tspan>
+<tspan fill="#eceff4">i</tspan>
+<tspan fill="#5e81ac">&lt;</tspan>
+<tspan fill="#eceff4">n</tspan><tspan fill="#5e81ac">;</tspan>
+<tspan fill="#5e81ac">+</tspan><tspan fill="#5e81ac">+</tspan>
+<tspan fill="#eceff4">i</tspan>
+<tspan fill="#d08770">)</tspan>
+</text>
+    <text fill="#4c566a" x="76" y="124" font-size="12">
+<tspan fill="#d08770">{</tspan>
+</text>
+    <text fill="#4c566a" x="100" y="136" font-size="12">
+
+<tspan fill="#81a1c1">if</tspan>
+<tspan fill="#d08770">(</tspan><tspan fill="#d08770">(</tspan><tspan fill="#eceff4">i</tspan><tspan fill="#5e81ac">&amp;</tspan><tspan fill="#b48ead">1</tspan><tspan fill="#d08770">)</tspan>
+<tspan fill="#5e81ac">=</tspan><tspan fill="#5e81ac">=</tspan>
+<tspan fill="#b48ead">0</tspan><tspan fill="#d08770">)</tspan>
+</text>
+    <text fill="#4c566a" x="100" y="148" font-size="12">
+<tspan fill="#d08770">{</tspan>
+</text>
+    <text fill="#4c566a" x="124" y="160" font-size="12">
+
+<tspan fill="#eceff4">sum</tspan>
+<tspan fill="#5e81ac">+</tspan><tspan fill="#5e81ac">=</tspan>
+<tspan fill="#eceff4">i</tspan><tspan fill="#5e81ac">;</tspan>
+</text>
+    <text fill="#4c566a" x="100" y="172" font-size="12">
+<tspan fill="#d08770">}</tspan>
+</text>
+    <text fill="#4c566a" x="76" y="184" font-size="12">
+<tspan fill="#d08770">}</tspan>
+</text>
+    <text fill="#4c566a" x="76" y="196" font-size="12">
+
+<tspan fill="#81a1c1">return</tspan>
+<tspan fill="#eceff4">sum</tspan>
+<tspan fill="#5e81ac">;</tspan>
+</text>
+    <text fill="#4c566a" x="52" y="208" font-size="12">
+<tspan fill="#d08770">}</tspan>
+</text>
+</svg>
