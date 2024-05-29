@@ -8,3 +8,6 @@ build-*/
 docgen_tmp/
 .vsc/
 .idea/
+*.svg
+!foo-light.svg
+!foo-dark.svg

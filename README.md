@@ -3,6 +3,8 @@
 I originally started this to learn ZIG Lang.
 
 ## Overview
+![style light](foo-light.svg)
+![style dark](foo-dark.svg)
 
 This program is a C++ to SVG converter. It takes C++ code as input and generates a corresponding SVG (Scalable Vector
 Graphics) image. This can be particularly useful for visualizing code flow, creating documentation, or sharing your code
