@@ -26,7 +26,7 @@ jobs:
       with:
         version: master
     - run: zig fmt --check ./src
-    - run: zig build --release=safe --cache-dir ./zig-cache --output-dir ./zig-out/bin
+    - run: zig build --release=safe
     - name: "Archive files"
       run: |
         tar -cvf output-${{ matrix.os }}.tar ./zig-out/bin/*
