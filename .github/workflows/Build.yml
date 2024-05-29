@@ -2,9 +2,9 @@ name: Build
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "master" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "main", "master" ]
   workflow_dispatch:
 
 jobs:
@@ -19,19 +19,19 @@ jobs:
     steps:
     - if: matrix.os == 'windows'
       run: git config --global core.autocrlf false
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
       with:
         submodules: true
     - uses: goto-bus-stop/setup-zig@v2
       with:
         version: master
     - run: zig fmt --check ./src
-    - run: zig build --release-safe --cache-dir ./zig-cache --output-dir ./zig-out/bin
+    - run: zig build --release=safe --cache-dir ./zig-cache --output-dir ./zig-out/bin
     - name: "Archive files"
       run: |
         tar -cvf output-${{ matrix.os }}.tar ./zig-out/bin/*
     - name: "Create Release"
-      uses: "actions/github-script@v6"
+      uses: "actions/github-script@v7"
       with:
         github-token: "${{ secrets.GITHUB_TOKEN }}"
         script: |
