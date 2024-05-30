@@ -1,23 +1,21 @@
-background_color: "#f5f5f5"
-close_color: "#ff867c"
-minimize_color: "#ffe775"
-maximize_color: "#7ed957"
-line_number_color: "#b3b3b3"
-fallback_color: "#3b3b3b"
+background_color: "#faf4ed"  # Warm off-white, reminiscent of paper
+close_color: "#e63946"       # Rich red, evoking traditional elements
+minimize_color: "#f4a261"    # Soft orange, like a Ghibli sunset
+maximize_color: "#2a9d8f"    # Teal, for the sea and sky in Ghibli films
+line_number_color: "#264653" # Dark blue, grounding like the night sky
+fallback_color: "#3b3b3b"    # Dark grey for normal text, unobtrusive
 font_size: 12
 padding: 0.05
 token_groups:
-  - name: Parentheses
-    tokens:
+  - tokens:
       - LeftParen
       - RightParen
       - LeftSquare
       - RightSquare
       - LeftCurly
       - RightCurly
-    color: "#d6e685"
-  - name: Operators
-    tokens:
+    color: "#e76f51"  # Warm clay, soft and earthy
+  - tokens:
       - LessThan
       - GreaterThan
       - Equal
@@ -34,16 +32,15 @@ token_groups:
       - DoubleQuote
       - Pipe
       - Ampersant
-    color: "#90beff"
-  - name: Comment
-    tokens:
+      - Modulo
+    color: "#2a9d8f"  # Teal, consistent with the maximize_color
+  - tokens:
       - Comment
-    color: "#b3d3b3"
-  - name: Number
-    tokens:
+      - MultiLineComment
+    color: "#264653"  # Dark blue, for a subtle presence
+  - tokens:
       - Number
-    color: "#ffab85"
-  - name: Keyword
-    tokens:
+    color: "#f4a261"  # Soft orange, gentle and inviting
+  - tokens:
       - Keyword
-    color: "#ff7851"
+    color: "#e9c46a"  # Muted gold, for a touch of magic

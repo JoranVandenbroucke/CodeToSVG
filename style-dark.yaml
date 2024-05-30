@@ -1,23 +1,21 @@
-background_color: "#2e3440"
-close_color: "#bf616a"
-minimize_color: "#ebcb8b"
-maximize_color: "#a3be8c"
-line_number_color: "#4c566a"
-fallback_color: "#eceff4"
+background_color: "#1a1a1a"  # Deep black for contrast
+close_color: "#ff0080"       # Neon pink
+minimize_color: "#00ff00"    # Bright green
+maximize_color: "#00ffff"    # Cyan
+line_number_color: "#808080" # Grey for neutrality
+fallback_color: "#d3d3d3"    # Light grey for default text
 font_size: 12
 padding: 0.05
 token_groups:
-  - name: Parentheses
-    tokens:
+  - tokens:
       - LeftParen
       - RightParen
       - LeftSquare
       - RightSquare
       - LeftCurly
       - RightCurly
-    color: "#d08770"
-  - name: Operators
-    tokens:
+    color: "#ff4500"  # Orange red
+  - tokens:
       - LessThan
       - GreaterThan
       - Equal
@@ -34,16 +32,15 @@ token_groups:
       - DoubleQuote
       - Pipe
       - Ampersant
-    color: "#5e81ac"
-  - name: Comment
-    tokens:
+      - Modulo
+    color: "#7fff00"  # Chartreuse
+  - tokens:
       - Comment
-    color: "#7b88a5"
-  - name: Number
-    tokens:
+      - MultiLineComment
+    color: "#ffa500"  # Orange
+  - tokens:
       - Number
-    color: "#b48ead"
-  - name: Keyword
-    tokens:
+    color: "#ff69b4"  # Hot pink
+  - tokens:
       - Keyword
-    color: "#81a1c1"
+    color: "#9400d3"  # Dark violet

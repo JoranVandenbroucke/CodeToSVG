@@ -27,8 +27,11 @@ pub const Kind = enum {
     SingleQuote,
     DoubleQuote,
     Comment,
+    MultiLineComment,
     Pipe,
     Ampersant,
+    Modulo,
+    Backslash,
     End,
     Unexpected,
 };
@@ -134,6 +137,7 @@ pub const Lexer = struct {
     fn atom(self: *Lexer, kind: Kind) Token {
         self.cursor += 1;
         self.char += 1;
+
         return Token{ .kind = kind, .lexeme = self.code[self.cursor - 1 .. self.cursor], .line = self.line, .char = self.char - 1 };
     }
 
@@ -177,6 +181,8 @@ pub const Lexer = struct {
             '"' => self.atom(Kind.DoubleQuote),
             '|' => self.atom(Kind.Pipe),
             '&' => self.atom(Kind.Ampersant),
+            '%' => self.atom(Kind.Modulo),
+            '\\' => self.atom(Kind.Backslash),
             else => self.atom(Kind.Unexpected),
         };
     }

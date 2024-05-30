@@ -4,16 +4,15 @@ const yaml = @import("yaml");
 const lexer = @import("lexer.zig");
 
 pub const Formatting = struct { background_color: []const u8, close_color: []const u8, minimize_color: []const u8, maximize_color: []const u8, line_number_color: []const u8, fallback_color: []const u8, font_size: u32, padding: f32, token_groups: []const struct {
-    name: []const u8,
     tokens: []const []const u8,
     color: []const u8,
 } };
 
 fn changeExtension(file: []const u8, newExtention: []const u8) ![]u8 {
-    const stem = std.fs.path.stem(file);
+    const stem = std.fs.path.stem(file); // FIXME this removes the leading parts of the path
     var buffer = try std.heap.page_allocator.alloc(u8, stem.len + newExtention.len);
     std.mem.copyForwards(u8, buffer, stem);
-    std.mem.copyForwards(u8, buffer[stem.len .. stem.len + newExtention.len], newExtention);
+    std.mem.copyForwards(u8, buffer[stem.len..], newExtention);
 
     return buffer;
 }
@@ -55,8 +54,6 @@ pub fn main() !void {
     var gpa = std.heap.GeneralPurposeAllocator(.{}){};
     defer _ = gpa.deinit();
 
-    // First we specify what parameters our program can take.
-    // We can use `parseParamsComptime` to parse a string into an array of `Param(Help)`
     const params = comptime clap.parseParamsComptime(
         \\-h, --help             Display this help and exit.
         \\-v, --version  Output version information and exit.
@@ -65,17 +62,13 @@ pub fn main() !void {
         \\-s, --style <YML> Color Theme to use.
     );
     const parsers = comptime .{ .FILE = clap.parsers.string, .SVG = clap.parsers.string, .YML = clap.parsers.string };
-    // Initialize our diagnostics, which can be used for reporting useful errors.
-    // This is optional. You can also pass `.{}` to `clap.parse` if you don't
-    // care about the extra information `Diagnostics` provides.
+
     var diag = clap.Diagnostic{};
     var res = clap.parse(clap.Help, &params, parsers, .{
         .diagnostic = &diag,
         .allocator = gpa.allocator(),
-    }) catch |err| {
-        // Report useful error and exit
-        diag.report(std.io.getStdErr().writer(), err) catch {};
-        return err;
+    }) catch {
+        return clap.help(std.io.getStdErr().writer(), clap.Help, &params, .{});
     };
 
     var inputFileName: []const u8 = "";
@@ -104,38 +97,42 @@ pub fn main() !void {
         return;
     }
 
-    // lexer.initReservedIdentifier();
-    const sourceCode = try std.fs.cwd().readFileAlloc(std.heap.page_allocator, inputFileName, 1024);
-    defer std.heap.page_allocator.free(sourceCode);
-
     var inputFile = try std.fs.cwd().openFile(inputFileName, .{});
     defer inputFile.close();
 
-    var buffer: [1024]u8 = undefined;
+    var buffer: [4096]u8 = undefined;
     var bytesRead = try inputFile.read(buffer[0..]);
 
     // Process the complete tokens with the lexer
     var width: u32 = 0;
-    var lastLine: u16 = 0;
+    var lastLine: u16 = 1;
+    var lastChar: u16 = 1;
     var tokenList = std.ArrayList(lexer.Token).init(std.heap.page_allocator);
     defer tokenList.deinit();
 
     while (bytesRead > 0) {
         var end = bytesRead;
-        while (end > 0 and (buffer[end - 1] == ' ' or buffer[end - 1] == '\t')) {
-            end -= 1;
+        if (bytesRead == 4096) {
+            while (end > 1 and buffer[end - 1] != '\n' and buffer[end - 1] != '\r' and buffer[end - 1] != 0) {
+                end -= 1;
+            }
         }
 
-        var lex = lexer.Lexer{ .code = buffer[0..end], .cursor = 0, .line = 1, .char = 1 };
-        var token = lex.next();
-        while (!token.is_one_of(&[_]lexer.Kind{ lexer.Kind.End, lexer.Kind.Unexpected })) {
+        var lex = lexer.Lexer{ .code = buffer[0..end], .cursor = 0, .line = lastLine, .char = lastChar };
+        while (true) {
+            const token = lex.next();
+            if (token.is_one_of(&[_]lexer.Kind{ lexer.Kind.End, lexer.Kind.Unexpected })) {
+                break;
+            }
+
             const lexemSize: u32 = @intCast(token.lexeme.len);
             if (width < token.char + lexemSize) {
                 width = token.char + lexemSize;
             }
             lastLine = token.line;
+            lastChar = token.char;
+
             try tokenList.append(token);
-            token = lex.next();
         }
 
         const remaining = bytesRead - end;
@@ -148,15 +145,10 @@ pub fn main() !void {
     }
 
     const style = try loadYaml(styleFile);
-    // 50 = top
-    // 12 = char height
-    // 1.1 = padding
+
     var wordSize: f32 = @floatFromInt(lastLine);
     const fontSize: f32 = @floatFromInt(style.font_size);
     const height: u32 = @intFromFloat((50.0 + fontSize * wordSize) * (1.0 + style.padding + style.padding));
-    // 50 = left (incl line nr)
-    // 12 = char width
-    // 1.1 = padding
     wordSize = @floatFromInt(width);
     width = @intFromFloat((50.0 + fontSize * wordSize) * (1.0 + style.padding + style.padding));
 
@@ -195,20 +187,14 @@ pub fn main() !void {
     var currentLine: u16 = 1;
     var previousChar: u16 = 0;
     for (tokenList.items) |token| {
-        if (token.is_one_of(&[_]lexer.Kind{ lexer.Kind.End, lexer.Kind.Unexpected }))
-            continue;
-
         if (currentLine != token.line) {
             currentLine = token.line;
-            charHeight += style.font_size;
-            var charPos = token.char;
-            if (charPos != 0) charPos -= 1;
 
             startText = try std.fmt.allocPrint(std.heap.page_allocator,
                 \\
                 \\</text>
                 \\    <text fill="{s}" x="{d}" y="{d}" font-size="{d}">
-            , .{ style.line_number_color, 52 + style.font_size * charPos, charHeight, style.font_size });
+            , .{ style.line_number_color, 52 + style.font_size * (token.char-1), charHeight + style.font_size * (currentLine-1), style.font_size });
             try outputFile.writer().print("{s}\n", .{startText});
         }
         const color = getColorFromTokeType(style, token.kind);

@@ -7,7 +7,10 @@ build/
 build-*/
 docgen_tmp/
 .vsc/
+.vs/
 .idea/
 *.svg
+*.png
+*.jpg
 !foo-light.svg
 !foo-dark.svg
