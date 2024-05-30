@@ -31,7 +31,7 @@ token_groups:
       - SingleQuote
       - DoubleQuote
       - Pipe
-      - Ampersant
+      - Ampersand
       - Modulo
     color: "#2a9d8f"  # Teal, consistent with the maximize_color
   - tokens:

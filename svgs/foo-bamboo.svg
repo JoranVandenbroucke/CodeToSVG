@@ -1,0 +1,253 @@
+<svg width="780" height="569" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="780" height="569" rx="20" fill="#eae0d3" />
+    <circle cx="26" cy="26" r="6" fill="#733714" />
+    <!-- Orange Button -->
+    <circle cx="46" cy="26" r="6" fill="#96512a" />
+    <!-- Green Button -->
+    <circle cx="66" cy="26" r="6" fill="#bfa87a" />
+    <text fill="#1b1814" x="26" y="64" font-size="12">1.</text>
+    <text fill="#1b1814" x="26" y="76" font-size="12">2.</text>
+    <text fill="#1b1814" x="26" y="88" font-size="12">3.</text>
+    <text fill="#1b1814" x="26" y="100" font-size="12">4.</text>
+    <text fill="#1b1814" x="26" y="112" font-size="12">5.</text>
+    <text fill="#1b1814" x="26" y="124" font-size="12">6.</text>
+    <text fill="#1b1814" x="26" y="136" font-size="12">7.</text>
+    <text fill="#1b1814" x="26" y="148" font-size="12">8.</text>
+    <text fill="#1b1814" x="26" y="160" font-size="12">9.</text>
+    <text fill="#1b1814" x="26" y="172" font-size="12">10.</text>
+    <text fill="#1b1814" x="26" y="184" font-size="12">11.</text>
+    <text fill="#1b1814" x="26" y="196" font-size="12">12.</text>
+    <text fill="#1b1814" x="26" y="208" font-size="12">13.</text>
+    <text fill="#1b1814" x="26" y="220" font-size="12">14.</text>
+    <text fill="#1b1814" x="26" y="232" font-size="12">15.</text>
+    <text fill="#1b1814" x="26" y="244" font-size="12">16.</text>
+    <text fill="#1b1814" x="26" y="256" font-size="12">17.</text>
+    <text fill="#1b1814" x="26" y="268" font-size="12">18.</text>
+    <text fill="#1b1814" x="26" y="280" font-size="12">19.</text>
+    <text fill="#1b1814" x="26" y="292" font-size="12">20.</text>
+    <text fill="#1b1814" x="26" y="304" font-size="12">21.</text>
+    <text fill="#1b1814" x="26" y="316" font-size="12">22.</text>
+    <text fill="#1b1814" x="26" y="328" font-size="12">23.</text>
+    <text fill="#1b1814" x="26" y="340" font-size="12">24.</text>
+    <text fill="#1b1814" x="26" y="352" font-size="12">25.</text>
+    <text fill="#1b1814" x="26" y="364" font-size="12">26.</text>
+    <text fill="#1b1814" x="26" y="376" font-size="12">27.</text>
+    <text fill="#1b1814" x="26" y="388" font-size="12">28.</text>
+    <text fill="#1b1814" x="26" y="400" font-size="12">29.</text>
+    <text fill="#1b1814" x="26" y="412" font-size="12">30.</text>
+    <text fill="#1b1814" x="26" y="424" font-size="12">31.</text>
+    <text fill="#1b1814" x="26" y="436" font-size="12">32.</text>
+    <text fill="#1b1814" x="26" y="448" font-size="12">33.</text>
+    <text fill="#1b1814" x="26" y="460" font-size="12">34.</text>
+    <text fill="#1b1814" x="26" y="472" font-size="12">35.</text>
+    <text fill="#1b1814" x="26" y="484" font-size="12">36.</text>
+    <text fill="#1b1814" x="26" y="496" font-size="12">37.</text>
+    <text fill="#1b1814" x="26" y="508" font-size="12">38.</text>
+    <text fill="#1b1814" x="26" y="520" font-size="12">39.</text>
+    <text fill="#1b1814" x="52" y="64" font-size="12">
+<tspan fill="#ff5730">#</tspan><tspan fill="#4c4f64">include</tspan>
+<tspan fill="#ff5730">&lt;</tspan><tspan fill="#4c4f64">iostream</tspan>
+<tspan fill="#ff5730">&gt;</tspan>
+</text>
+    <text fill="#1b1814" x="52" y="88" font-size="12">
+<tspan fill="#7bb274">enum</tspan>
+<tspan fill="#7bb274">class</tspan>
+<tspan fill="#4c4f64">myEnum</tspan>
+<tspan fill="#7bb274">{</tspan>
+</text>
+    <text fill="#1b1814" x="100" y="100" font-size="12">
+<tspan fill="#4c4f64">First</tspan>
+<tspan fill="#ff5730">,</tspan>
+</text>
+    <text fill="#1b1814" x="100" y="112" font-size="12">
+<tspan fill="#4c4f64">Second</tspan>
+</text>
+    <text fill="#1b1814" x="52" y="124" font-size="12">
+<tspan fill="#7bb274">}</tspan><tspan fill="#ff5730">;</tspan>
+</text>
+    <text fill="#1b1814" x="52" y="136" font-size="12">
+<tspan fill="#7bb274">struct</tspan>
+<tspan fill="#4c4f64">myStruct</tspan>
+<tspan fill="#7bb274">{</tspan>
+</text>
+    <text fill="#1b1814" x="100" y="148" font-size="12">
+<tspan fill="#7bb274">int</tspan>
+<tspan fill="#4c4f64">id</tspan>
+<tspan fill="#ff5730">;</tspan>
+</text>
+    <text fill="#1b1814" x="100" y="160" font-size="12">
+<tspan fill="#7bb274">char</tspan>
+<tspan fill="#4c4f64">name</tspan>
+<tspan fill="#ff5730">;</tspan>
+</text>
+    <text fill="#1b1814" x="52" y="172" font-size="12">
+<tspan fill="#7bb274">}</tspan>
+</text>
+    <text fill="#1b1814" x="52" y="184" font-size="12">
+
+<tspan fill="#7bb274">class</tspan>
+<tspan fill="#4c4f64">myClass</tspan>
+<tspan fill="#7bb274">{</tspan>
+</text>
+    <text fill="#1b1814" x="52" y="196" font-size="12">
+<tspan fill="#7bb274">public</tspan>
+<tspan fill="#ff5730">:</tspan>
+</text>
+    <text fill="#1b1814" x="100" y="208" font-size="12">
+<tspan fill="#4c4f64">myClass</tspan>
+<tspan fill="#7bb274">(</tspan><tspan fill="#7bb274">)</tspan>
+<tspan fill="#ff5730">=</tspan>
+<tspan fill="#7bb274">default</tspan>
+<tspan fill="#ff5730">;</tspan>
+</text>
+    <text fill="#1b1814" x="100" y="220" font-size="12">
+<tspan fill="#7bb274">void</tspan>
+<tspan fill="#4c4f64">display</tspan>
+<tspan fill="#7bb274">(</tspan><tspan fill="#7bb274">)</tspan><tspan fill="#7bb274">{</tspan>
+</text>
+    <text fill="#1b1814" x="148" y="232" font-size="12">
+<tspan fill="#4c4f64">std</tspan>
+<tspan fill="#ff5730">:</tspan><tspan fill="#ff5730">:</tspan><tspan fill="#4c4f64">cout</tspan>
+<tspan fill="#ff5730">&lt;</tspan><tspan fill="#ff5730">&lt;</tspan>
+<tspan fill="#ff5730">&quot;</tspan><tspan fill="#4c4f64">Inside</tspan>
+<tspan fill="#4c4f64">myClass</tspan>
+<tspan fill="#4c4f64">\</tspan><tspan fill="#4c4f64">n</tspan><tspan fill="#ff5730">&quot;</tspan><tspan fill="#ff5730">;</tspan>
+</text>
+    <text fill="#1b1814" x="100" y="244" font-size="12">
+<tspan fill="#7bb274">}</tspan>
+</text>
+    <text fill="#1b1814" x="52" y="256" font-size="12">
+<tspan fill="#7bb274">}</tspan>
+</text>
+    <text fill="#1b1814" x="52" y="280" font-size="12">
+
+<tspan fill="#7bb274">int</tspan>
+<tspan fill="#4c4f64">main</tspan>
+<tspan fill="#7bb274">(</tspan><tspan fill="#7bb274">)</tspan><tspan fill="#7bb274">{</tspan>
+</text>
+    <text fill="#1b1814" x="100" y="292" font-size="12">
+<tspan fill="#7bb274">constexpr</tspan>
+<tspan fill="#7bb274">int</tspan>
+<tspan fill="#4c4f64">number</tspan>
+<tspan fill="#ff5730">=</tspan>
+<tspan fill="#fde4d4">10</tspan>
+<tspan fill="#ff5730">;</tspan>
+</text>
+    <text fill="#1b1814" x="100" y="304" font-size="12">
+<tspan fill="#7bb274">constexpr</tspan>
+<tspan fill="#7bb274">char</tspan>
+<tspan fill="#4c4f64">single_quote</tspan>
+<tspan fill="#ff5730">=</tspan>
+<tspan fill="#ff5730">&apos;</tspan><tspan fill="#4c4f64">\</tspan><tspan fill="#ff5730">&apos;</tspan><tspan fill="#ff5730">&apos;</tspan><tspan fill="#ff5730">;</tspan>
+</text>
+    <text fill="#1b1814" x="100" y="316" font-size="12">
+<tspan fill="#bbc1c4">// this is a comment</tspan>
+</text>
+    <text fill="#1b1814" x="88" y="328" font-size="12">
+<tspan fill="#ff5730">/</tspan><tspan fill="#ff5730">*</tspan>
+<tspan fill="#4c4f64">This</tspan>
+<tspan fill="#4c4f64">is</tspan>
+</text>
+    <text fill="#1b1814" x="136" y="340" font-size="12">
+<tspan fill="#4c4f64">a</tspan>
+<tspan fill="#4c4f64">multi</tspan>
+<tspan fill="#ff5730">-</tspan><tspan fill="#4c4f64">line</tspan>
+</text>
+    <text fill="#1b1814" x="136" y="352" font-size="12">
+<tspan fill="#4c4f64">comment</tspan>
+<tspan fill="#ff5730">*</tspan><tspan fill="#ff5730">/</tspan>
+</text>
+    <text fill="#1b1814" x="100" y="364" font-size="12">
+<tspan fill="#4c4f64">std</tspan>
+<tspan fill="#ff5730">:</tspan><tspan fill="#ff5730">:</tspan><tspan fill="#4c4f64">cout</tspan>
+<tspan fill="#ff5730">&lt;</tspan><tspan fill="#ff5730">&lt;</tspan>
+<tspan fill="#ff5730">&quot;</tspan><tspan fill="#4c4f64">The</tspan>
+<tspan fill="#4c4f64">number</tspan>
+<tspan fill="#4c4f64">is</tspan>
+<tspan fill="#ff5730">:</tspan>
+<tspan fill="#ff5730">&quot;</tspan>
+<tspan fill="#ff5730">&lt;</tspan><tspan fill="#ff5730">&lt;</tspan>
+<tspan fill="#4c4f64">number</tspan>
+<tspan fill="#ff5730">&lt;</tspan><tspan fill="#ff5730">&lt;</tspan>
+<tspan fill="#ff5730">&apos;</tspan><tspan fill="#4c4f64">\</tspan><tspan fill="#4c4f64">n</tspan><tspan fill="#ff5730">&apos;</tspan><tspan fill="#ff5730">;</tspan>
+</text>
+    <text fill="#1b1814" x="100" y="388" font-size="12">
+<tspan fill="#7bb274">const</tspan>
+<tspan fill="#7bb274">int</tspan>
+<tspan fill="#4c4f64">array</tspan>
+<tspan fill="#7bb274">[</tspan><tspan fill="#7bb274">]</tspan>
+<tspan fill="#ff5730">=</tspan>
+<tspan fill="#7bb274">{</tspan><tspan fill="#fde4d4">1</tspan><tspan fill="#ff5730">,</tspan><tspan fill="#fde4d4">2</tspan><tspan fill="#ff5730">,</tspan><tspan fill="#fde4d4">3</tspan><tspan fill="#7bb274">}</tspan><tspan fill="#ff5730">;</tspan>
+</text>
+    <text fill="#1b1814" x="100" y="400" font-size="12">
+<tspan fill="#7bb274">const</tspan>
+<tspan fill="#7bb274">int</tspan>
+<tspan fill="#4c4f64">value</tspan>
+<tspan fill="#ff5730">=</tspan>
+<tspan fill="#4c4f64">array</tspan>
+<tspan fill="#7bb274">[</tspan><tspan fill="#fde4d4">0</tspan><tspan fill="#7bb274">]</tspan>
+<tspan fill="#ff5730">+</tspan>
+<tspan fill="#4c4f64">array</tspan>
+<tspan fill="#7bb274">[</tspan><tspan fill="#fde4d4">1</tspan><tspan fill="#7bb274">]</tspan>
+<tspan fill="#ff5730">+</tspan>
+<tspan fill="#ff5730">-</tspan><tspan fill="#4c4f64">array</tspan>
+<tspan fill="#7bb274">[</tspan><tspan fill="#fde4d4">2</tspan><tspan fill="#7bb274">]</tspan><tspan fill="#ff5730">;</tspan>
+</text>
+    <text fill="#1b1814" x="100" y="412" font-size="12">
+<tspan fill="#7bb274">const</tspan>
+<tspan fill="#7bb274">bool</tspan>
+<tspan fill="#4c4f64">comparison</tspan>
+<tspan fill="#ff5730">=</tspan>
+<tspan fill="#7bb274">(</tspan><tspan fill="#4c4f64">value</tspan>
+<tspan fill="#ff5730">&gt;</tspan>
+<tspan fill="#4c4f64">number</tspan>
+<tspan fill="#7bb274">)</tspan><tspan fill="#ff5730">;</tspan>
+</text>
+    <text fill="#1b1814" x="100" y="424" font-size="12">
+<tspan fill="#7bb274">const</tspan>
+<tspan fill="#7bb274">int</tspan>
+<tspan fill="#4c4f64">bitwise</tspan>
+<tspan fill="#ff5730">=</tspan>
+<tspan fill="#4c4f64">sum</tspan>
+<tspan fill="#ff5730">|</tspan>
+<tspan fill="#4c4f64">number</tspan>
+<tspan fill="#ff5730">;</tspan>
+</text>
+    <text fill="#1b1814" x="100" y="436" font-size="12">
+<tspan fill="#7bb274">const</tspan>
+<tspan fill="#7bb274">int</tspan>
+<tspan fill="#4c4f64">modulo</tspan>
+<tspan fill="#ff5730">=</tspan>
+<tspan fill="#4c4f64">sum</tspan>
+<tspan fill="#ff5730">%</tspan>
+<tspan fill="#4c4f64">number</tspan>
+<tspan fill="#ff5730">;</tspan>
+</text>
+    <text fill="#1b1814" x="100" y="460" font-size="12">
+<tspan fill="#4c4f64">myEnum</tspan>
+<tspan fill="#4c4f64">e</tspan>
+<tspan fill="#ff5730">=</tspan>
+<tspan fill="#4c4f64">myEnum</tspan>
+<tspan fill="#ff5730">:</tspan><tspan fill="#ff5730">:</tspan><tspan fill="#4c4f64">FIRST</tspan>
+<tspan fill="#ff5730">;</tspan>
+</text>
+    <text fill="#1b1814" x="100" y="472" font-size="12">
+<tspan fill="#4c4f64">myStruct</tspan>
+<tspan fill="#4c4f64">s</tspan><tspan fill="#7bb274">{</tspan><tspan fill="#fde4d4">1</tspan><tspan fill="#ff5730">,</tspan><tspan fill="#ff5730">&apos;</tspan><tspan fill="#4c4f64">a</tspan><tspan fill="#ff5730">&apos;</tspan><tspan fill="#7bb274">}</tspan><tspan fill="#ff5730">;</tspan>
+</text>
+    <text fill="#1b1814" x="100" y="484" font-size="12">
+<tspan fill="#4c4f64">myClass</tspan>
+<tspan fill="#4c4f64">c</tspan><tspan fill="#7bb274">{</tspan><tspan fill="#7bb274">}</tspan><tspan fill="#ff5730">;</tspan>
+</text>
+    <text fill="#1b1814" x="100" y="496" font-size="12">
+<tspan fill="#4c4f64">c</tspan><tspan fill="#ff5730">.</tspan><tspan fill="#4c4f64">display</tspan>
+<tspan fill="#7bb274">(</tspan><tspan fill="#7bb274">)</tspan><tspan fill="#ff5730">;</tspan>
+</text>
+    <text fill="#1b1814" x="100" y="508" font-size="12">
+<tspan fill="#7bb274">return</tspan>
+<tspan fill="#fde4d4">0</tspan><tspan fill="#ff5730">;</tspan>
+</text>
+    <text fill="#1b1814" x="52" y="520" font-size="12">
+<tspan fill="#7bb274">}</tspan>
+</text>
+</svg>

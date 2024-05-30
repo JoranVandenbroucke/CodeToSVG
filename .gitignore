@@ -12,5 +12,9 @@ docgen_tmp/
 *.svg
 *.png
 *.jpg
-!foo-light.svg
-!foo-dark.svg
+!svgs/foo-abzu.svg
+!svgs/foo-bamboo.svg
+!svgs/foo-light.svg
+!svgs/foo-dark.svg
+!svgs/foo-ori.svg
+!svgs/foo-sakura.svg

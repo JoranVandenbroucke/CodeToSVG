@@ -1,0 +1,46 @@
+background_color: "#021e26"  # Deep ocean blue, representing the abyss
+close_color: "#028c75"       # Aquamarine, reminiscent of shallow waters
+minimize_color: "#02a9a4"    # Turquoise, for the clear tropical waters
+maximize_color: "#00ffff"    # Cyan, evoking the color of water
+line_number_color: "#017374" # Dark teal, like the ocean at twilight
+fallback_color: "#c0c0c0"    # Silver, for the shimmer of fish scales
+font_size: 12
+padding: 0.05
+token_groups:
+  - tokens:
+      - LeftParen
+      - RightParen
+      - LeftSquare
+      - RightSquare
+      - LeftCurly
+      - RightCurly
+    color: "#ff7f50"  # Coral, representing the vibrant marine life
+  - tokens:
+      - LessThan
+      - GreaterThan
+      - Equal
+      - Plus
+      - Minus
+      - Asterisk
+      - Slash
+      - Hash
+      - Dot
+      - Comma
+      - Colon
+      - Semicolon
+      - SingleQuote
+      - DoubleQuote
+      - Pipe
+      - Ampersand
+      - Modulo
+    color: "#add8e6"  # Light blue, for the serenity of the underwater world
+  - tokens:
+      - Comment
+      - MultiLineComment
+    color: "#f08080"  # Light coral, softer and less intrusive for comments
+  - tokens:
+      - Number
+    color: "#20b2aa"  # Light sea green, calm and unobtrusive
+  - tokens:
+      - Keyword
+    color: "#ffd700"  # Gold, for the treasures hidden beneath the sea

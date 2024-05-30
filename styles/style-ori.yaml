@@ -1,0 +1,46 @@
+background_color: "#1f2f22"  # Deep forest green, evoking the game's lush environments
+close_color: "#f07178"       # Soft red, reminiscent of Ori's spirit flame
+minimize_color: "#f78c6c"    # Warm peach, like the glow of spirit lights
+maximize_color: "#c3e88d"    # Light green, reflecting the game's life energy
+line_number_color: "#82aaff" # Light blue, for the spirit trails and water
+fallback_color: "#c7c7c7"    # Light grey for normal text, like moonlight
+font_size: 12
+padding: 0.05
+token_groups:
+  - tokens:
+      - LeftParen
+      - RightParen
+      - LeftSquare
+      - RightSquare
+      - LeftCurly
+      - RightCurly
+    color: "#ffcb6b"  # Sunflower yellow, for the warmth of the forest
+  - tokens:
+      - LessThan
+      - GreaterThan
+      - Equal
+      - Plus
+      - Minus
+      - Asterisk
+      - Slash
+      - Hash
+      - Dot
+      - Comma
+      - Colon
+      - Semicolon
+      - SingleQuote
+      - DoubleQuote
+      - Pipe
+      - Ampersand
+      - Modulo
+    color: "#89ddff"  # Sky blue, for the clear skies above the forest
+  - tokens:
+      - Comment
+      - MultiLineComment
+    color: "#c792ea"  # Lavender, for the mystical elements of the game
+  - tokens:
+      - Number
+    color: "#f07178"  # Soft red, now swapped with the close_color
+  - tokens:
+      - Keyword
+    color: "#82aaff"  # Light blue, now swapped with the line_number_color

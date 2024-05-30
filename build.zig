@@ -27,8 +27,11 @@ pub fn build(b: *std.Build) void {
     exe.root_module.addImport("yaml", yaml_mod);
 
     b.installFile("foo.cpp", "foo.cpp");
-    b.installFile("style-light.yaml", "style-light.yaml");
-    b.installFile("style-dark.yaml", "style-dark.yaml");
+    b.installDirectory(.{
+        .source_dir = b.path("styles"),
+        .install_dir = .bin,
+        .install_subdir = "styles",
+    });
 
     // This declares intent for the executable to be installed into the
     // standard location when the user invokes the "install" step (the default

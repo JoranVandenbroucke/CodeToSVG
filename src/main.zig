@@ -9,10 +9,15 @@ pub const Formatting = struct { background_color: []const u8, close_color: []con
 } };
 
 fn changeExtension(file: []const u8, newExtention: []const u8) ![]u8 {
-    const stem = std.fs.path.stem(file); // FIXME this removes the leading parts of the path
-    var buffer = try std.heap.page_allocator.alloc(u8, stem.len + newExtention.len);
-    std.mem.copyForwards(u8, buffer, stem);
-    std.mem.copyForwards(u8, buffer[stem.len..], newExtention);
+    const dirname = std.fs.path.dirname(file);
+    const basename = std.fs.path.basename(file);
+    const stem = std.fs.path.stem(basename);
+
+    var buffer = try std.heap.page_allocator.alloc(u8, dirname.?.len + stem.len + newExtention.len + 1); // +1 for the slash
+    std.mem.copyForwards(u8, buffer, dirname.?);
+    buffer[dirname.?.len] = '/';
+    std.mem.copyForwards(u8, buffer[dirname.?.len + 1 ..], stem);
+    std.mem.copyForwards(u8, buffer[dirname.?.len + stem.len + 1 ..], newExtention);
 
     return buffer;
 }
@@ -194,7 +199,7 @@ pub fn main() !void {
                 \\
                 \\</text>
                 \\    <text fill="{s}" x="{d}" y="{d}" font-size="{d}">
-            , .{ style.line_number_color, 52 + style.font_size * (token.char-1), charHeight + style.font_size * (currentLine-1), style.font_size });
+            , .{ style.line_number_color, 52 + style.font_size * (token.char - 1), charHeight + style.font_size * (currentLine - 1), style.font_size });
             try outputFile.writer().print("{s}\n", .{startText});
         }
         const color = getColorFromTokeType(style, token.kind);

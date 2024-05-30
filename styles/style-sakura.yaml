@@ -1,0 +1,46 @@
+background_color: "#f5e9ea"  # Pale pink, like the backdrop of sakura petals
+close_color: "#ff8c99"       # Sakura pink, for a touch of bloom
+minimize_color: "#7bb274"    # Fresh green, matching the sakura leaves
+maximize_color: "#f7b2b7"    # Soft pink, less intense than close_color
+line_number_color: "#6a8e7f" # Muted green, like the stems of cherry blossoms
+fallback_color: "#504a4b"    # Dark grey for normal text, like the tree bark
+font_size: 12
+padding: 0.05
+token_groups:
+  - tokens:
+      - LeftParen
+      - RightParen
+      - LeftSquare
+      - RightSquare
+      - LeftCurly
+      - RightCurly
+    color: "#f7b2b7"  # Soft pink, harmonizing with maximize_color
+  - tokens:
+      - LessThan
+      - GreaterThan
+      - Equal
+      - Plus
+      - Minus
+      - Asterisk
+      - Slash
+      - Hash
+      - Dot
+      - Comma
+      - Colon
+      - Semicolon
+      - SingleQuote
+      - DoubleQuote
+      - Pipe
+      - Ampersand
+      - Modulo
+    color: "#ffadc6"  # Light pink, for a subtle differentiation
+  - tokens:
+      - Comment
+      - MultiLineComment
+    color: "#89c0e4"  # Light blue, adding a touch of sky to the comments
+  - tokens:
+      - Number
+    color: "#de3163"  # Cerise, a darker and more readable shade of pink
+  - tokens:
+      - Keyword
+    color: "#7bb274"  # Fresh green, to maintain the balance

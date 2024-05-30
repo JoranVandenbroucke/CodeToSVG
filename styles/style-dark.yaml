@@ -31,7 +31,7 @@ token_groups:
       - SingleQuote
       - DoubleQuote
       - Pipe
-      - Ampersant
+      - Ampersand
       - Modulo
     color: "#7fff00"  # Chartreuse
   - tokens:
