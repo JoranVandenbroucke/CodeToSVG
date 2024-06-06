@@ -6,7 +6,7 @@ const lexer = @import("lexer.zig");
 pub const Formatting = struct { background_color: []const u8, close_color: []const u8, minimize_color: []const u8, maximize_color: []const u8, line_number_color: []const u8, fallback_color: []const u8, font_size: u32, padding: f32, token_groups: []const struct {
     tokens: []const []const u8,
     color: []const u8,
-    } };
+} };
 
 fn changeExtension(file: []const u8, newExtention: []const u8) ![]u8 {
     const dirname = std.fs.path.dirname(file);
@@ -207,13 +207,13 @@ pub fn main() !void {
         if (token.char < previousCharEnd or token.char - previousCharEnd == 0) {
             const lineNr = try std.fmt.allocPrint(std.heap.page_allocator,
                 \\<tspan fill="{s}">{s}</tspan>
-, .{ color, lexeme });
+            , .{ color, lexeme });
             defer std.heap.page_allocator.free(lineNr);
             try outputFile.writer().print("{s}", .{lineNr});
         } else {
             const lineNr = try std.fmt.allocPrint(std.heap.page_allocator,
                 \\<tspan fill="{s}"> {s}</tspan>
-, .{ color, lexeme });
+            , .{ color, lexeme });
             defer std.heap.page_allocator.free(lineNr);
             try outputFile.writer().print("{s}", .{lineNr});
         }
