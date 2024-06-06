@@ -6,7 +6,7 @@ const lexer = @import("lexer.zig");
 pub const Formatting = struct { background_color: []const u8, close_color: []const u8, minimize_color: []const u8, maximize_color: []const u8, line_number_color: []const u8, fallback_color: []const u8, font_size: u32, padding: f32, token_groups: []const struct {
     tokens: []const []const u8,
     color: []const u8,
-} };
+    } };
 
 fn changeExtension(file: []const u8, newExtention: []const u8) ![]u8 {
     const dirname = std.fs.path.dirname(file);
@@ -130,9 +130,9 @@ pub fn main() !void {
                 break;
             }
 
-            const lexemSize: u32 = @intCast(token.lexeme.len);
-            if (width < token.char + lexemSize) {
-                width = token.char + lexemSize;
+            const lexemeSize: u32 = @intCast(token.lexeme.len);
+            if (width < token.char + lexemeSize) {
+                width = token.char + lexemeSize;
             }
             lastLine = token.line;
             lastChar = token.char;
@@ -187,34 +187,38 @@ pub fn main() !void {
     var startText = try std.fmt.allocPrint(std.heap.page_allocator,
         \\    <text fill="{s}" x="52" y="{d}" font-size="{d}">
     , .{ style.line_number_color, charHeight, style.font_size });
-    try outputFile.writer().print("{s}\n", .{startText});
+    try outputFile.writer().print("{s}", .{startText});
 
     var currentLine: u16 = 1;
-    var previousChar: u16 = 0;
+    var previousCharEnd: u32 = 0;
     for (tokenList.items) |token| {
         if (currentLine != token.line) {
             currentLine = token.line;
 
             startText = try std.fmt.allocPrint(std.heap.page_allocator,
-                \\
-                \\</text>
+                \\    </text>
                 \\    <text fill="{s}" x="{d}" y="{d}" font-size="{d}">
             , .{ style.line_number_color, 52 + style.font_size * (token.char - 1), charHeight + style.font_size * (currentLine - 1), style.font_size });
-            try outputFile.writer().print("{s}\n", .{startText});
+            try outputFile.writer().print("{s}", .{startText});
         }
         const color = getColorFromTokeType(style, token.kind);
         const lexeme = getCorrectSvgLexeme(token.lexeme);
-        const lineNr = try std.fmt.allocPrint(std.heap.page_allocator,
-            \\<tspan fill="{s}">{s}</tspan>
-        , .{ color, lexeme });
-        defer std.heap.page_allocator.free(lineNr);
 
-        if (token.char < previousChar or token.char - previousChar == 1) {
+        if (token.char < previousCharEnd or token.char - previousCharEnd == 0) {
+            const lineNr = try std.fmt.allocPrint(std.heap.page_allocator,
+                \\<tspan fill="{s}">{s}</tspan>
+, .{ color, lexeme });
+            defer std.heap.page_allocator.free(lineNr);
             try outputFile.writer().print("{s}", .{lineNr});
         } else {
-            try outputFile.writer().print("\n{s}", .{lineNr});
+            const lineNr = try std.fmt.allocPrint(std.heap.page_allocator,
+                \\<tspan fill="{s}"> {s}</tspan>
+, .{ color, lexeme });
+            defer std.heap.page_allocator.free(lineNr);
+            try outputFile.writer().print("{s}", .{lineNr});
         }
-        previousChar = token.char;
+        const lexemeSize: u32 = @intCast(token.lexeme.len);
+        previousCharEnd = token.char + lexemeSize;
     }
     _ = try outputFile.write("\n</text>\n</svg>");
 }
