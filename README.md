@@ -39,58 +39,65 @@ To convert a C++ file to SVG, use the following command:
 
 ### Themes Preview
 
-<table>
-  <tr>
-    <td>
-      <img src="svgs/foo-dark.svg" alt="style dark" width="300"/>
-      <p align="center">generated with style-dark.yaml</p>
-    </td>
-    <td>
-      <img src="svgs/foo-light.svg" alt="style light" width="300"/>
-      <p align="center">generated with style-light.yaml</p>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <img src="svgs/foo-abzu.svg" alt="style abzu" width="300"/>
-      <p align="center">generated with style-abzu.yaml</p>
-    </td>
-    <td>
-      <img src="svgs/foo-gris.svg" alt="style gris" width="300"/>
-      <p align="center">generated with style-gris.yaml</p>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <img src="svgs/foo-ori.svg" alt="style ori and the blind forest" width="300"/>
-      <p align="center">generated with style-ori.yaml</p>
-    </td>
-    <td>
-      <img src="svgs/foo-stardew.svg" alt="style stardew valey" width="300"/>
-      <p align="center">generated with style-stardew.yaml</p>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <img src="svgs/foo-aurora.svg" alt="style aurora borealis" width="300"/>
-      <p align="center">generated with style-aurora.yaml</p>
-    </td>
-    <td>
-      <img src="svgs/foo-bamboo.svg" alt="style bamboo" width="300"/>
-      <p align="center">generated with style-bamboo.yaml</p>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <img src="svgs/foo-nocturne.svg" alt="style night garden" width="300"/>
-      <p align="center">generated with style-nocturne.yaml</p>
-    </td>
-    <td>
-      <img src="svgs/foo-sakura.svg" alt="style sakura" width="300"/>
-      <p align="center">generated with style-sakura.yaml</p>
-    </td>
-  </tr>
-</table>
+#### style dark
+
+![](svgs/foo-dark.svg)
+
+---
+
+#### style light
+
+![](svgs/foo-light.svg)
+
+---
+
+#### style abzu
+
+![](svgs/foo-abzu.svg)
+
+---
+
+#### style gris
+
+![](svgs/foo-gris.svg)
+
+---
+
+#### style ori and the blind forest
+
+![](svgs/foo-ori.svg)
+
+---
+
+#### style stardew valey
+
+![](svgs/foo-stardew.svg)
+
+---
+
+#### style aurora borealis
+
+![](svgs/foo-aurora.svg)
+
+---
+
+#### style bamboo
+
+![](svgs/foo-bamboo.svg)
+
+---
+
+#### style night garden
+
+![](svgs/foo-nocturne.svg)
+
+---
+
+#### style sakura
+
+![](svgs/foo-sakura.svg)
+
+---
 
 ## Help Wanted
 
