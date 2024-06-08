@@ -1,11 +1,17 @@
+button_margin_percent: 1
+button_padding_percent: 0.5
+code_margin_percent: 1
+code_padding_percent: 1.5
+button_radius: 6
+font_size: 13
 background_color: "#021e26"  # Deep ocean blue, representing the abyss
 close_color: "#028c75"       # Aquamarine, reminiscent of shallow waters
 minimize_color: "#02a9a4"    # Turquoise, for the clear tropical waters
-maximize_color: "#00ffff"    # Cyan, evoking the color of water
+maximize_color: "#00ffff"    # Cyan, evoking the colour of water
 line_number_color: "#017374" # Dark teal, like the ocean at twilight
 fallback_color: "#c0c0c0"    # Silver, for the shimmer of fish scales
-font_size: 12
-padding: 0.05
+
+# You can group these how you want, and create as many groups as desired. The tokens should handle everything.
 token_groups:
   - tokens:
       - LeftParen
@@ -33,6 +39,8 @@ token_groups:
       - Pipe
       - Ampersand
       - Modulo
+      - Circumflex
+      - Tilde
     color: "#add8e6"  # Light blue, for the serenity of the underwater world
   - tokens:
       - Comment

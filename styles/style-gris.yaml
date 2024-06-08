@@ -1,0 +1,53 @@
+button_margin_percent: 1
+button_padding_percent: 0.5
+code_margin_percent: 1
+code_padding_percent: 1.5
+button_radius: 6
+font_size: 13
+background_color: "#FCF9F7"  # Serene off-white, echoing the game's tranquil canvas
+close_color: "#F7AFB3"       # Soft terracotta, reminiscent of Gris's poignant journey
+minimize_color: "#F0CEB5"    # Subdued coral, capturing the game's fleeting moments of warmth
+maximize_color: "#BDE3D4"    # Clear turquoise, reflecting the game's hopeful horizons
+line_number_color: "#779E9F" # Gentle teal, inspired by the game's verdant growth
+fallback_color: "#77A3BA"    # Steely blue, providing a strong contrast akin to Gris's resolve
+
+token_groups:
+  - tokens:
+      - LeftParen
+      - RightParen
+      - LeftSquare
+      - RightSquare
+      - LeftCurly
+      - RightCurly
+    color: "#1E579D"  # Delicate indigo, for a harmonious look on structural characters
+  - tokens:
+      - LessThan
+      - GreaterThan
+      - Equal
+      - Plus
+      - Minus
+      - Asterisk
+      - Slash
+      - Hash
+      - Dot
+      - Comma
+      - Colon
+      - Semicolon
+      - SingleQuote
+      - DoubleQuote
+      - Pipe
+      - Ampersand
+      - Modulo
+      - Circumflex
+      - Tilde
+    color: "#DF7585"  # Muted mauve, clear and distinct for operators and punctuations
+  - tokens:
+      - Comment
+      - MultiLineComment
+    color: "#728975"  # Earthy moss, subdued yet readable for comments
+  - tokens:
+      - Number
+    color: "#D65859"  # Vibrant scarlet, bright and clear for numbers
+  - tokens:
+      - Keyword
+    color: "#A876B4"  # Soft lavender, for keywords to stand out yet blend harmoniously

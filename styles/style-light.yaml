@@ -1,11 +1,16 @@
-background_color: "#faf4ed"  # Warm off-white, reminiscent of paper
-close_color: "#e63946"       # Rich red, evoking traditional elements
-minimize_color: "#f4a261"    # Soft orange, like a Ghibli sunset
-maximize_color: "#2a9d8f"    # Teal, for the sea and sky in Ghibli films
-line_number_color: "#264653" # Dark blue, grounding like the night sky
-fallback_color: "#3b3b3b"    # Dark grey for normal text, unobtrusive
-font_size: 12
-padding: 0.05
+button_margin_percent: 1
+button_padding_percent: 0.5
+code_margin_percent: 1
+code_padding_percent: 1.5
+button_radius: 6
+font_size: 13
+background_color: "#fafafa"  # A clean, light grey that reduces glare
+close_color: "#ff6347"       # Tomato, a softer red that is less jarring
+minimize_color: "#ffa07a"    # Light Salmon, a warm and welcoming orange
+maximize_color: "#3cb371"    # Medium Sea Green, calming and neutral
+line_number_color: "#555555" # A darker grey for better contrast with line numbers
+fallback_color: "#2f4f4f"    # Dark Slate Grey, professional and readable
+
 token_groups:
   - tokens:
       - LeftParen
@@ -14,7 +19,7 @@ token_groups:
       - RightSquare
       - LeftCurly
       - RightCurly
-    color: "#e76f51"  # Warm clay, soft and earthy
+    color: "#4682b4"  # Steel Blue, for a touch of sophistication
   - tokens:
       - LessThan
       - GreaterThan
@@ -33,14 +38,16 @@ token_groups:
       - Pipe
       - Ampersand
       - Modulo
-    color: "#2a9d8f"  # Teal, consistent with the maximize_color
+      - Circumflex
+      - Tilde
+    color: "#6a5acd"  # Slate Blue, distinct yet not overwhelming
   - tokens:
       - Comment
       - MultiLineComment
-    color: "#264653"  # Dark blue, for a subtle presence
+    color: "#708090"  # Slate Grey, unobtrusive and clear
   - tokens:
       - Number
-    color: "#f4a261"  # Soft orange, gentle and inviting
+    color: "#db7093"  # Pale Violet Red, soft and readable
   - tokens:
       - Keyword
-    color: "#e9c46a"  # Muted gold, for a touch of magic
+    color: "#7ea9e1"  # Soft blue, for clarity and focus

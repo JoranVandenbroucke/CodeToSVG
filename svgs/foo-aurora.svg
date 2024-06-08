@@ -1,0 +1,83 @@
+<svg width="574.5" height="828.5" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="574.5" height="828.5" rx="20" fill="#131313" />
+    <circle cx="24" cy="30" r="6" fill="#FFD700" />
+    <!-- Orange Button -->
+    <circle cx="48" cy="30" r="6" fill="#00FF00" />
+    <!-- Green Button -->
+    <circle cx="72" cy="30" r="6" fill="#8A2BE2" />
+    <text text-anchor="end" fill="#FFD700" x="34" y="64" font-size="13">1.</text>
+    <text text-anchor="end" fill="#FFD700" x="34" y="83" font-size="13">2.</text>
+    <text text-anchor="end" fill="#FFD700" x="34" y="103" font-size="13">3.</text>
+    <text text-anchor="end" fill="#FFD700" x="34" y="122" font-size="13">4.</text>
+    <text text-anchor="end" fill="#FFD700" x="34" y="142" font-size="13">5.</text>
+    <text text-anchor="end" fill="#FFD700" x="34" y="161" font-size="13">6.</text>
+    <text text-anchor="end" fill="#FFD700" x="34" y="181" font-size="13">7.</text>
+    <text text-anchor="end" fill="#FFD700" x="34" y="200" font-size="13">8.</text>
+    <text text-anchor="end" fill="#FFD700" x="34" y="220" font-size="13">9.</text>
+    <text text-anchor="end" fill="#FFD700" x="34" y="239" font-size="13">10.</text>
+    <text text-anchor="end" fill="#FFD700" x="34" y="259" font-size="13">11.</text>
+    <text text-anchor="end" fill="#FFD700" x="34" y="278" font-size="13">12.</text>
+    <text text-anchor="end" fill="#FFD700" x="34" y="298" font-size="13">13.</text>
+    <text text-anchor="end" fill="#FFD700" x="34" y="317" font-size="13">14.</text>
+    <text text-anchor="end" fill="#FFD700" x="34" y="337" font-size="13">15.</text>
+    <text text-anchor="end" fill="#FFD700" x="34" y="356" font-size="13">16.</text>
+    <text text-anchor="end" fill="#FFD700" x="34" y="376" font-size="13">17.</text>
+    <text text-anchor="end" fill="#FFD700" x="34" y="395" font-size="13">18.</text>
+    <text text-anchor="end" fill="#FFD700" x="34" y="415" font-size="13">19.</text>
+    <text text-anchor="end" fill="#FFD700" x="34" y="434" font-size="13">20.</text>
+    <text text-anchor="end" fill="#FFD700" x="34" y="454" font-size="13">21.</text>
+    <text text-anchor="end" fill="#FFD700" x="34" y="473" font-size="13">22.</text>
+    <text text-anchor="end" fill="#FFD700" x="34" y="493" font-size="13">23.</text>
+    <text text-anchor="end" fill="#FFD700" x="34" y="512" font-size="13">24.</text>
+    <text text-anchor="end" fill="#FFD700" x="34" y="532" font-size="13">25.</text>
+    <text text-anchor="end" fill="#FFD700" x="34" y="551" font-size="13">26.</text>
+    <text text-anchor="end" fill="#FFD700" x="34" y="571" font-size="13">27.</text>
+    <text text-anchor="end" fill="#FFD700" x="34" y="590" font-size="13">28.</text>
+    <text text-anchor="end" fill="#FFD700" x="34" y="610" font-size="13">29.</text>
+    <text text-anchor="end" fill="#FFD700" x="34" y="629" font-size="13">30.</text>
+    <text text-anchor="end" fill="#FFD700" x="34" y="649" font-size="13">31.</text>
+    <text text-anchor="end" fill="#FFD700" x="34" y="668" font-size="13">32.</text>
+    <text text-anchor="end" fill="#FFD700" x="34" y="688" font-size="13">33.</text>
+    <text text-anchor="end" fill="#FFD700" x="34" y="707" font-size="13">34.</text>
+    <text text-anchor="end" fill="#FFD700" x="34" y="727" font-size="13">35.</text>
+    <text text-anchor="end" fill="#FFD700" x="34" y="746" font-size="13">36.</text>
+    <text text-anchor="end" fill="#FFD700" x="34" y="766" font-size="13">37.</text>
+    <text text-anchor="end" fill="#FFD700" x="34" y="785" font-size="13">38.</text>
+    <text text-anchor="end" fill="#FFD700" x="34" y="805" font-size="13">39.</text>
+    <text fill="#FFD700" x="46" y="64" font-size="13"><tspan fill="#00F260"> #</tspan><tspan fill="#D3D3D3">include</tspan><tspan fill="#00F260"> &lt;</tspan><tspan fill="#D3D3D3">iostream</tspan><tspan fill="#00F260">&gt;</tspan>    </text>
+    <text fill="#D3D3D3" x="46" y="103" font-size="13"><tspan fill="#00FFFF">enum</tspan><tspan fill="#00FFFF"> class</tspan><tspan fill="#D3D3D3"> myEnum</tspan><tspan fill="#7BFFD8">{</tspan>    </text>
+    <text fill="#D3D3D3" x="72" y="122.5" font-size="13"><tspan fill="#D3D3D3">First</tspan><tspan fill="#00F260">,</tspan>    </text>
+    <text fill="#D3D3D3" x="72" y="142" font-size="13"><tspan fill="#D3D3D3">Second</tspan>    </text>
+    <text fill="#D3D3D3" x="46" y="161.5" font-size="13"><tspan fill="#7BFFD8">}</tspan><tspan fill="#00F260">;</tspan>    </text>
+    <text fill="#D3D3D3" x="46" y="181" font-size="13"><tspan fill="#00FFFF">struct</tspan><tspan fill="#D3D3D3"> myStruct</tspan><tspan fill="#7BFFD8">{</tspan>    </text>
+    <text fill="#D3D3D3" x="72" y="200.5" font-size="13"><tspan fill="#00FFFF">int</tspan><tspan fill="#D3D3D3"> id</tspan><tspan fill="#00F260">;</tspan>    </text>
+    <text fill="#D3D3D3" x="72" y="220" font-size="13"><tspan fill="#D3D3D3">char</tspan><tspan fill="#D3D3D3"> name</tspan><tspan fill="#00F260">;</tspan>    </text>
+    <text fill="#D3D3D3" x="46" y="239.5" font-size="13"><tspan fill="#7BFFD8">}</tspan>    </text>
+    <text fill="#D3D3D3" x="46" y="259" font-size="13"><tspan fill="#00FFFF">class</tspan><tspan fill="#D3D3D3"> myClass</tspan><tspan fill="#7BFFD8">{</tspan>    </text>
+    <text fill="#D3D3D3" x="46" y="278.5" font-size="13"><tspan fill="#00FFFF">public</tspan><tspan fill="#00F260">:</tspan>    </text>
+    <text fill="#D3D3D3" x="72" y="298" font-size="13"><tspan fill="#D3D3D3">myClass</tspan><tspan fill="#7BFFD8">(</tspan><tspan fill="#7BFFD8">)</tspan><tspan fill="#00F260"> =</tspan><tspan fill="#00FFFF"> default</tspan><tspan fill="#00F260">;</tspan>    </text>
+    <text fill="#D3D3D3" x="72" y="317.5" font-size="13"><tspan fill="#00FFFF">void</tspan><tspan fill="#D3D3D3"> display</tspan><tspan fill="#7BFFD8">(</tspan><tspan fill="#7BFFD8">)</tspan><tspan fill="#7BFFD8">{</tspan>    </text>
+    <text fill="#D3D3D3" x="98" y="337" font-size="13"><tspan fill="#D3D3D3">std</tspan><tspan fill="#00F260">:</tspan><tspan fill="#00F260">:</tspan><tspan fill="#D3D3D3">cout</tspan><tspan fill="#00F260"> &lt;</tspan><tspan fill="#00F260">&lt;</tspan><tspan fill="#00F260"> &quot;</tspan><tspan fill="#D3D3D3">Inside</tspan><tspan fill="#D3D3D3"> myClass</tspan><tspan fill="#D3D3D3">\</tspan><tspan fill="#D3D3D3">n</tspan><tspan fill="#00F260">&quot;</tspan><tspan fill="#00F260">;</tspan>    </text>
+    <text fill="#D3D3D3" x="72" y="356.5" font-size="13"><tspan fill="#7BFFD8">}</tspan>    </text>
+    <text fill="#D3D3D3" x="46" y="376" font-size="13"><tspan fill="#7BFFD8">}</tspan>    </text>
+    <text fill="#D3D3D3" x="46" y="415" font-size="13"><tspan fill="#00FFFF">int</tspan><tspan fill="#D3D3D3"> main</tspan><tspan fill="#7BFFD8">(</tspan><tspan fill="#7BFFD8">)</tspan><tspan fill="#7BFFD8">{</tspan>    </text>
+    <text fill="#D3D3D3" x="72" y="434.5" font-size="13"><tspan fill="#00FFFF">constexpr</tspan><tspan fill="#00FFFF"> int</tspan><tspan fill="#D3D3D3"> number</tspan><tspan fill="#00F260"> =</tspan><tspan fill="#FF00FF"> 10</tspan><tspan fill="#00F260">;</tspan>    </text>
+    <text fill="#D3D3D3" x="72" y="454" font-size="13"><tspan fill="#00FFFF">constexpr</tspan><tspan fill="#D3D3D3"> char</tspan><tspan fill="#D3D3D3"> single_quote</tspan><tspan fill="#00F260"> =</tspan><tspan fill="#00F260"> &apos;</tspan><tspan fill="#D3D3D3">\</tspan><tspan fill="#00F260">&apos;</tspan><tspan fill="#00F260">&apos;</tspan><tspan fill="#00F260">;</tspan>    </text>
+    <text fill="#D3D3D3" x="72" y="473.5" font-size="13"><tspan fill="#FFD700">// this is a comment</tspan>    </text>
+    <text fill="#D3D3D3" x="65.5" y="493" font-size="13"><tspan fill="#00F260">/</tspan><tspan fill="#00F260">*</tspan><tspan fill="#D3D3D3"> This</tspan><tspan fill="#D3D3D3"> is</tspan>    </text>
+    <text fill="#D3D3D3" x="91.5" y="512.5" font-size="13"><tspan fill="#D3D3D3">a</tspan><tspan fill="#D3D3D3"> multi</tspan><tspan fill="#00F260">-</tspan><tspan fill="#D3D3D3">line</tspan>    </text>
+    <text fill="#D3D3D3" x="91.5" y="532" font-size="13"><tspan fill="#D3D3D3">comment</tspan><tspan fill="#00F260"> *</tspan><tspan fill="#00F260">/</tspan>    </text>
+    <text fill="#D3D3D3" x="72" y="551.5" font-size="13"><tspan fill="#D3D3D3">std</tspan><tspan fill="#00F260">:</tspan><tspan fill="#00F260">:</tspan><tspan fill="#D3D3D3">cout</tspan><tspan fill="#00F260"> &lt;</tspan><tspan fill="#00F260">&lt;</tspan><tspan fill="#00F260"> &quot;</tspan><tspan fill="#D3D3D3">The</tspan><tspan fill="#D3D3D3"> number</tspan><tspan fill="#D3D3D3"> is</tspan><tspan fill="#00F260">:</tspan><tspan fill="#00F260"> &quot;</tspan><tspan fill="#00F260"> &lt;</tspan><tspan fill="#00F260">&lt;</tspan><tspan fill="#D3D3D3"> number</tspan><tspan fill="#00F260"> &lt;</tspan><tspan fill="#00F260">&lt;</tspan><tspan fill="#00F260"> &apos;</tspan><tspan fill="#D3D3D3">\</tspan><tspan fill="#D3D3D3">n</tspan><tspan fill="#00F260">&apos;</tspan><tspan fill="#00F260">;</tspan>    </text>
+    <text fill="#D3D3D3" x="72" y="590.5" font-size="13"><tspan fill="#00FFFF">const</tspan><tspan fill="#00FFFF"> int</tspan><tspan fill="#D3D3D3"> array</tspan><tspan fill="#7BFFD8">[</tspan><tspan fill="#7BFFD8">]</tspan><tspan fill="#00F260"> =</tspan><tspan fill="#7BFFD8"> {</tspan><tspan fill="#FF00FF">1</tspan><tspan fill="#00F260">,</tspan><tspan fill="#FF00FF">2</tspan><tspan fill="#00F260">,</tspan><tspan fill="#FF00FF">3</tspan><tspan fill="#7BFFD8">}</tspan><tspan fill="#00F260">;</tspan>    </text>
+    <text fill="#D3D3D3" x="72" y="610" font-size="13"><tspan fill="#00FFFF">const</tspan><tspan fill="#00FFFF"> int</tspan><tspan fill="#D3D3D3"> value</tspan><tspan fill="#00F260"> =</tspan><tspan fill="#D3D3D3"> array</tspan><tspan fill="#7BFFD8">[</tspan><tspan fill="#FF00FF">0</tspan><tspan fill="#7BFFD8">]</tspan><tspan fill="#00F260"> +</tspan><tspan fill="#D3D3D3"> array</tspan><tspan fill="#7BFFD8">[</tspan><tspan fill="#FF00FF">1</tspan><tspan fill="#7BFFD8">]</tspan><tspan fill="#00F260"> +</tspan><tspan fill="#00F260"> -</tspan><tspan fill="#D3D3D3">array</tspan><tspan fill="#7BFFD8">[</tspan><tspan fill="#FF00FF">2</tspan><tspan fill="#7BFFD8">]</tspan><tspan fill="#00F260">;</tspan>    </text>
+    <text fill="#D3D3D3" x="72" y="629.5" font-size="13"><tspan fill="#00FFFF">const</tspan><tspan fill="#00FFFF"> bool</tspan><tspan fill="#D3D3D3"> comparison</tspan><tspan fill="#00F260"> =</tspan><tspan fill="#7BFFD8"> (</tspan><tspan fill="#D3D3D3">value</tspan><tspan fill="#00F260"> &gt;</tspan><tspan fill="#D3D3D3"> number</tspan><tspan fill="#7BFFD8">)</tspan><tspan fill="#00F260">;</tspan>    </text>
+    <text fill="#D3D3D3" x="72" y="649" font-size="13"><tspan fill="#00FFFF">const</tspan><tspan fill="#00FFFF"> int</tspan><tspan fill="#D3D3D3"> bitwise</tspan><tspan fill="#00F260"> =</tspan><tspan fill="#D3D3D3"> sum</tspan><tspan fill="#00F260"> |</tspan><tspan fill="#D3D3D3"> number</tspan><tspan fill="#00F260">;</tspan>    </text>
+    <text fill="#D3D3D3" x="72" y="668.5" font-size="13"><tspan fill="#00FFFF">const</tspan><tspan fill="#00FFFF"> int</tspan><tspan fill="#D3D3D3"> modulo</tspan><tspan fill="#00F260"> =</tspan><tspan fill="#D3D3D3"> sum</tspan><tspan fill="#00F260"> %</tspan><tspan fill="#D3D3D3"> number</tspan><tspan fill="#00F260">;</tspan>    </text>
+    <text fill="#D3D3D3" x="72" y="707.5" font-size="13"><tspan fill="#D3D3D3">myEnum</tspan><tspan fill="#D3D3D3"> e</tspan><tspan fill="#00F260"> =</tspan><tspan fill="#D3D3D3"> myEnum</tspan><tspan fill="#00F260">:</tspan><tspan fill="#00F260">:</tspan><tspan fill="#D3D3D3">FIRST</tspan><tspan fill="#00F260">;</tspan>    </text>
+    <text fill="#D3D3D3" x="72" y="727" font-size="13"><tspan fill="#D3D3D3">myStruct</tspan><tspan fill="#D3D3D3"> s</tspan><tspan fill="#7BFFD8">{</tspan><tspan fill="#FF00FF">1</tspan><tspan fill="#00F260">,</tspan><tspan fill="#00F260">&apos;</tspan><tspan fill="#D3D3D3">a</tspan><tspan fill="#00F260">&apos;</tspan><tspan fill="#7BFFD8">}</tspan><tspan fill="#00F260">;</tspan>    </text>
+    <text fill="#D3D3D3" x="72" y="746.5" font-size="13"><tspan fill="#D3D3D3">myClass</tspan><tspan fill="#D3D3D3"> c</tspan><tspan fill="#7BFFD8">{</tspan><tspan fill="#7BFFD8">}</tspan><tspan fill="#00F260">;</tspan>    </text>
+    <text fill="#D3D3D3" x="72" y="766" font-size="13"><tspan fill="#D3D3D3">c</tspan><tspan fill="#00F260">.</tspan><tspan fill="#D3D3D3">display</tspan><tspan fill="#7BFFD8">(</tspan><tspan fill="#7BFFD8">)</tspan><tspan fill="#00F260">;</tspan>    </text>
+    <text fill="#D3D3D3" x="72" y="785.5" font-size="13"><tspan fill="#00FFFF">return</tspan><tspan fill="#FF00FF"> 0</tspan><tspan fill="#00F260">;</tspan>    </text>
+    <text fill="#D3D3D3" x="46" y="805" font-size="13"><tspan fill="#7BFFD8">}</tspan>
+</text>
+</svg>

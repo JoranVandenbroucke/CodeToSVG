@@ -10,11 +10,11 @@ docgen_tmp/
 .vs/
 .idea/
 *.svg
+*.yaml
+*.yml
 *.png
 *.jpg
-!svgs/foo-abzu.svg
-!svgs/foo-bamboo.svg
-!svgs/foo-light.svg
-!svgs/foo-dark.svg
-!svgs/foo-ori.svg
-!svgs/foo-sakura.svg
+*.bat
+!svgs/*.svg
+!styles/*.yaml
+!styles/*.yml

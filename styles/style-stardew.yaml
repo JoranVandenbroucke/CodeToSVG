@@ -1,0 +1,53 @@
+button_margin_percent: 1
+button_padding_percent: 0.5
+code_margin_percent: 1
+code_padding_percent: 1.5
+button_radius: 6
+font_size: 13
+background_color: "#F5D598"  # Warm beige, like the gentle morning light in the game
+close_color: "#B76C42"       # Earthy brown, reminiscent of the farm soil
+minimize_color: "#144683"    # Deep blue, like the rivers and lakes
+maximize_color: "#268CF0"    # Bright blue, evoking the clear skies
+line_number_color: "#4A9030" # Lush green, like the valley's vibrant foliage
+fallback_color: "#141414"    # Dark grey for text, providing good contrast
+
+token_groups:
+  - tokens:
+      - LeftParen
+      - RightParen
+      - LeftSquare
+      - RightSquare
+      - LeftCurly
+      - RightCurly
+    color: "#228C22"  # Forest green, for a natural feel on structural characters
+  - tokens:
+      - LessThan
+      - GreaterThan
+      - Equal
+      - Plus
+      - Minus
+      - Asterisk
+      - Slash
+      - Hash
+      - Dot
+      - Comma
+      - Colon
+      - Semicolon
+      - SingleQuote
+      - DoubleQuote
+      - Pipe
+      - Ampersand
+      - Modulo
+      - Circumflex
+      - Tilde
+    color: "#8B4513"  # Saddle brown, clear and distinct for operators and punctuations
+  - tokens:
+      - Comment
+      - MultiLineComment
+    color: "#56A71E"  # Vibrant bush green, playful and light for comments
+  - tokens:
+      - Number
+    color: "#8C1D02"  # Rich mahogany, bright and clear for numbers
+  - tokens:
+      - Keyword
+    color: "#268CF0"  # Sky blue, vibrant and lively for keywords

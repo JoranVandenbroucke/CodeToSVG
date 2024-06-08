@@ -3,10 +3,25 @@ const clap = @import("clap");
 const yaml = @import("yaml");
 const lexer = @import("lexer.zig");
 
-pub const Formatting = struct { background_color: []const u8, close_color: []const u8, minimize_color: []const u8, maximize_color: []const u8, line_number_color: []const u8, fallback_color: []const u8, font_size: u32, padding: f32, token_groups: []const struct {
+pub const Formatting = struct { button_margin_percent: f32, button_padding_percent: f32, code_margin_percent: f32, code_padding_percent: f32, button_radius: u8, font_size: u8, background_color: []const u8, close_color: []const u8, minimize_color: []const u8, maximize_color: []const u8, line_number_color: []const u8, fallback_color: []const u8, token_groups: []const struct {
     tokens: []const []const u8,
     color: []const u8,
 } };
+
+fn countDigits(number: usize) usize {
+    if (number == 0) {
+        return 1;
+    }
+    var count: usize = 0;
+    var n = number;
+
+    while (n != 0) {
+        n /= 10;
+        count += 1;
+    }
+
+    return count; // Account for the number 0 having 1 digit
+}
 
 fn changeExtension(file: []const u8, newExtention: []const u8) ![]u8 {
     const dirname = std.fs.path.dirname(file);
@@ -109,8 +124,8 @@ pub fn main() !void {
     var bytesRead = try inputFile.read(buffer[0..]);
 
     // Process the complete tokens with the lexer
-    var width: u32 = 0;
-    var lastLine: u16 = 1;
+    var max_line_width: u32 = 0;
+    var line_count: u16 = 1;
     var lastChar: u16 = 1;
     var tokenList = std.ArrayList(lexer.Token).init(std.heap.page_allocator);
     defer tokenList.deinit();
@@ -123,7 +138,7 @@ pub fn main() !void {
             }
         }
 
-        var lex = lexer.Lexer{ .code = buffer[0..end], .cursor = 0, .line = lastLine, .char = lastChar };
+        var lex = lexer.Lexer{ .code = buffer[0..end], .cursor = 0, .line = line_count, .column = lastChar };
         while (true) {
             const token = lex.next();
             if (token.is_one_of(&[_]lexer.Kind{ lexer.Kind.End, lexer.Kind.Unexpected })) {
@@ -131,11 +146,11 @@ pub fn main() !void {
             }
 
             const lexemeSize: u32 = @intCast(token.lexeme.len);
-            if (width < token.char + lexemeSize) {
-                width = token.char + lexemeSize;
+            if (max_line_width < token.column + lexemeSize) {
+                max_line_width = token.column + lexemeSize;
             }
-            lastLine = token.line;
-            lastChar = token.char;
+            line_count = token.line;
+            lastChar = token.column;
 
             try tokenList.append(token);
         }
@@ -151,60 +166,87 @@ pub fn main() !void {
 
     const style = try loadYaml(styleFile);
 
-    var wordSize: f32 = @floatFromInt(lastLine);
-    const fontSize: f32 = @floatFromInt(style.font_size);
-    const height: u32 = @intFromFloat((50.0 + fontSize * wordSize) * (1.0 + style.padding + style.padding));
-    wordSize = @floatFromInt(width);
-    width = @intFromFloat((50.0 + fontSize * wordSize) * (1.0 + style.padding + style.padding));
+    const max_line_width_float: f32 = @floatFromInt(max_line_width);
+    const line_count_float: f16 = @floatFromInt(line_count);
+    const font_size_float: f16 = @floatFromInt(style.font_size);
+    const circle_radius: f16 = @floatFromInt(style.button_radius);
+    const circle_diameter: f16 = circle_radius * 2.0;
+
+    // Approximating character width and line height based on font size
+    const char_width: f16 = font_size_float / 2.0; // Approximation
+    const line_height: f16 = font_size_float * 1.5; // Approximation
+
+    const line_count_width: f16 = @floatFromInt(countDigits(line_count));
+
+    const circle_margine: f32 = style.button_margin_percent * circle_diameter;
+    const circle_padding: f32 = style.button_padding_percent * circle_diameter;
+    const line_count_margine: f32 = style.code_margin_percent * 2 * line_count_width;
+    const line_count_padding: f32 = style.code_padding_percent * 2 * line_count_width;
+    const line_code_padding: f32 = style.code_padding_percent * 2 * max_line_width_float;
+
+    const first_column_x: f32 = circle_margine + circle_padding;
+    const circle_y: f32 = circle_margine + circle_padding + circle_padding + circle_radius;
+    const circle_red_x: f32 = first_column_x + circle_radius;
+    const circle_orange_x: f32 = circle_red_x + circle_diameter + circle_padding * 2;
+    const circle_green_x: f32 = circle_orange_x + circle_diameter + circle_padding * 2;
+
+    const window_width = line_count_margine * 2 + line_count_padding * 3 + line_code_padding + (line_count_margine + max_line_width_float) * char_width;
+    const window_height = circle_margine * 2 + circle_padding * 2 + circle_diameter + line_count_margine * 2 + line_count_padding * 2 + line_count_float * line_height;
 
     var outputFile = try std.fs.cwd().createFile(outputFileName, .{});
     defer outputFile.close();
     const svgHeader = try std.fmt.allocPrint(std.heap.page_allocator,
         \\<svg width="{d}" height="{d}" xmlns="http://www.w3.org/2000/svg">
         \\    <rect x="0" y="0" width="{d}" height="{d}" rx="20" fill="{s}" />
-        \\    <circle cx="26" cy="26" r="6" fill="{s}" />
+        \\    <circle cx="{d}" cy="{d}" r="{d}" fill="{s}" />
         \\    <!-- Orange Button -->
-        \\    <circle cx="46" cy="26" r="6" fill="{s}" />
+        \\    <circle cx="{d}" cy="{d}" r="{d}" fill="{s}" />
         \\    <!-- Green Button -->
-        \\    <circle cx="66" cy="26" r="6" fill="{s}" />
-    , .{ width, height, width, height, style.background_color, style.close_color, style.minimize_color, style.maximize_color });
+        \\    <circle cx="{d}" cy="{d}" r="{d}" fill="{s}" />
+    , .{ window_width, window_height, window_width, window_height, style.background_color, circle_red_x, circle_y, circle_radius, style.close_color, circle_orange_x, circle_y, circle_radius, style.minimize_color, circle_green_x, circle_y, circle_radius, style.maximize_color });
     defer std.heap.page_allocator.free(svgHeader);
-
     try outputFile.writer().print("{s}\n", .{svgHeader});
 
-    var charHeight: u32 = 64;
-    for (1..lastLine + 1) |i| {
+    const text_start_y: f32 = circle_y + circle_radius + circle_padding + circle_margine + line_count_margine + line_count_padding;
+    const text_line_nr_x: f32 = first_column_x + circle_radius + line_count_margine + line_count_padding;
+    for (0..line_count) |i| {
+        const idx_float: f32 = @floatFromInt(i);
+        const y_position: u32 = @intFromFloat(text_start_y + idx_float * line_height);
         const lineNr = try std.fmt.allocPrint(std.heap.page_allocator,
-            \\    <text fill="{s}" x="26" y="{d}" font-size="{d}">{d}.</text>
-        , .{ style.line_number_color, charHeight, style.font_size, i });
+            \\    <text text-anchor="end" fill="{s}" x="{d}" y="{d}" font-size="{d}">{d}.</text>
+        , .{ style.line_number_color, text_line_nr_x, y_position, style.font_size, i + 1 });
         defer std.heap.page_allocator.free(lineNr);
 
         try outputFile.writer().print("{s}\n", .{lineNr});
-        charHeight += style.font_size;
     }
-    charHeight = 64;
 
+    const text_code_x: f32 = text_line_nr_x + line_count_padding * 2;
     var startText = try std.fmt.allocPrint(std.heap.page_allocator,
-        \\    <text fill="{s}" x="52" y="{d}" font-size="{d}">
-    , .{ style.line_number_color, charHeight, style.font_size });
+        \\    <text fill="{s}" x="{d}" y="{d}" font-size="{d}">
+    , .{ style.line_number_color, text_code_x, text_start_y, style.font_size });
     try outputFile.writer().print("{s}", .{startText});
 
     var currentLine: u16 = 1;
     var previousCharEnd: u32 = 0;
     for (tokenList.items) |token| {
         if (currentLine != token.line) {
-            currentLine = token.line;
+            const column: f16 = @floatFromInt(token.column - 1);
+            const lineNr: f16 = @floatFromInt(token.line - 1);
+            const x_position: f32 = text_code_x + column * char_width;
+            const y_position: f32 = text_start_y + line_height * lineNr;
 
             startText = try std.fmt.allocPrint(std.heap.page_allocator,
                 \\    </text>
                 \\    <text fill="{s}" x="{d}" y="{d}" font-size="{d}">
-            , .{ style.line_number_color, 52 + style.font_size * (token.char - 1), charHeight + style.font_size * (currentLine - 1), style.font_size });
+            , .{ style.fallback_color, x_position, y_position, style.font_size });
             try outputFile.writer().print("{s}", .{startText});
+
+            currentLine = token.line;
         }
         const color = getColorFromTokeType(style, token.kind);
         const lexeme = getCorrectSvgLexeme(token.lexeme);
 
-        if (token.char < previousCharEnd or token.char - previousCharEnd == 0) {
+        if (token.column < previousCharEnd or token.column - previousCharEnd == 0) {
             const lineNr = try std.fmt.allocPrint(std.heap.page_allocator,
                 \\<tspan fill="{s}">{s}</tspan>
             , .{ color, lexeme });
@@ -218,7 +260,7 @@ pub fn main() !void {
             try outputFile.writer().print("{s}", .{lineNr});
         }
         const lexemeSize: u32 = @intCast(token.lexeme.len);
-        previousCharEnd = token.char + lexemeSize;
+        previousCharEnd = token.column + lexemeSize;
     }
     _ = try outputFile.write("\n</text>\n</svg>");
 }

@@ -1,0 +1,53 @@
+button_margin_percent: 1
+button_padding_percent: 0.5
+code_margin_percent: 1
+code_padding_percent: 1.5
+button_radius: 6
+font_size: 13
+background_color: "#0b0c10"  # Deep space black, like the night sky
+close_color: "#6F8F4F"       # Palm Leaf, a muted green reminiscent of night-time foliage
+minimize_color: "#295C56"    # Dark Slate Gray, for a touch of the dark garden under moonlight
+maximize_color: "#AD704E"    # Brown Sugar, warm like the soil of the garden
+line_number_color:  "#a1c9c9"  # Moonstone blue, blending in like the whispers of the night
+fallback_color: "#CCCCCC"    # Light gray for default text, ensuring readability
+
+token_groups:
+  - tokens:
+      - LeftParen
+      - RightParen
+      - LeftSquare
+      - RightSquare
+      - LeftCurly
+      - RightCurly
+    color: "#6F8F4F"  # Palm Leaf, for a natural look on structural characters
+  - tokens:
+      - LessThan
+      - GreaterThan
+      - Equal
+      - Plus
+      - Minus
+      - Asterisk
+      - Slash
+      - Hash
+      - Dot
+      - Comma
+      - Colon
+      - Semicolon
+      - SingleQuote
+      - DoubleQuote
+      - Pipe
+      - Ampersand
+      - Modulo
+      - Circumflex
+      - Tilde
+    color: "#f2cc8f"  # Sandy brown, soft like the moon's reflection
+  - tokens:
+      - Comment
+      - MultiLineComment
+    color: "#AD704E"  # Brown Sugar, for comments to stand out like paths in the garden
+  - tokens:
+      - Number
+    color: "#FFFFFF"  # White, to be clearly visible as if illuminated by moonlight
+  - tokens:
+      - Keyword
+    color: "#6F8F4F"  # Palm Leaf, for keywords to blend with the foliage theme

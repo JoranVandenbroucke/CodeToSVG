@@ -1,11 +1,16 @@
-background_color: "#f5e9ea"  # Pale pink, like the backdrop of sakura petals
-close_color: "#ff8c99"       # Sakura pink, for a touch of bloom
-minimize_color: "#7bb274"    # Fresh green, matching the sakura leaves
-maximize_color: "#f7b2b7"    # Soft pink, less intense than close_color
-line_number_color: "#6a8e7f" # Muted green, like the stems of cherry blossoms
-fallback_color: "#504a4b"    # Dark grey for normal text, like the tree bark
-font_size: 12
-padding: 0.05
+button_margin_percent: 1
+button_padding_percent: 0.5
+code_margin_percent: 1
+code_padding_percent: 1.5
+button_radius: 6
+font_size: 13
+background_color: "#fff0f1"  # A lighter pink to resemble sakura petals in the sunlight
+close_color: "#ff8c99"       # Sakura pink, a touch of bloom that's not too overpowering
+minimize_color: "#86c77b"    # A slightly brighter green to represent fresh sakura leaves
+maximize_color: "#f7b2b7"    # Soft pink, gentle and inviting
+line_number_color: "#8a9a85" # A softer green, like the stems of cherry blossoms in the shade
+fallback_color: "#504a4b"    # Dark grey for normal text, providing good contrast
+
 token_groups:
   - tokens:
       - LeftParen
@@ -14,7 +19,7 @@ token_groups:
       - RightSquare
       - LeftCurly
       - RightCurly
-    color: "#f7b2b7"  # Soft pink, harmonizing with maximize_color
+    color: "#fabebe"  # A more subdued pink to ensure brackets are not too distracting
   - tokens:
       - LessThan
       - GreaterThan
@@ -33,14 +38,16 @@ token_groups:
       - Pipe
       - Ampersand
       - Modulo
+      - Circumflex
+      - Tilde
     color: "#ffadc6"  # Light pink, for a subtle differentiation
   - tokens:
       - Comment
       - MultiLineComment
-    color: "#89c0e4"  # Light blue, adding a touch of sky to the comments
+    color: "#a1cbe6"  # A slightly darker blue to ensure comments are readable
   - tokens:
       - Number
-    color: "#de3163"  # Cerise, a darker and more readable shade of pink
+    color: "#c71585"  # Medium violet red, for numbers to stand out more
   - tokens:
       - Keyword
-    color: "#7bb274"  # Fresh green, to maintain the balance
+    color: "#7bb274"  # Fresh green, to maintain the balance and readability

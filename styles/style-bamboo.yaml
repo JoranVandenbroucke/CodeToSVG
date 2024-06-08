@@ -1,11 +1,17 @@
-background_color: "#eae0d3"  # Bamboo light greyish orange, soft and bright
-close_color: "#733714"       # Sepia, reflecting the darker tones of a red panda
-minimize_color: "#96512a"    # Chestnut, a warm mid-tone from the red panda's fur
-maximize_color: "#bfa87a"    # Light French Beige, for the lighter areas of the red panda
-line_number_color: "#1b1814" # Black Chocolate, deep and grounding like the forest floor
-fallback_color: "#4c4f64"    # Dark grey, for contrast against the darker tones
-font_size: 12
-padding: 0.05
+button_margin_percent: 1
+button_padding_percent: 0.5
+code_margin_percent: 1
+code_padding_percent: 1.5
+button_radius: 6
+font_size: 13
+background_color: "#f0e6d2"  # A softer bamboo shade for the background
+close_color: "#8b4513"       # Darker sepia for the close button
+minimize_color: "#a0522d"    # Rich sienna for the minimize button
+maximize_color: "#deb887"    # Burlywood for the maximize button
+line_number_color: "#2f4f4f" # Dark slate gray for line numbers
+fallback_color: "#696969"    # Dim gray for fallback scenarios
+
+# You can group these how you want, and create as many groups as desired. The tokens should handle everything.
 token_groups:
   - tokens:
       - LeftParen
@@ -14,7 +20,7 @@ token_groups:
       - RightSquare
       - LeftCurly
       - RightCurly
-    color: "#7bb274"  # Fresh green, to complement the bamboo theme
+    color: "#556b2f"  # Olive drab for brackets and braces
   - tokens:
       - LessThan
       - GreaterThan
@@ -33,14 +39,16 @@ token_groups:
       - Pipe
       - Ampersand
       - Modulo
-    color: "#ff5730"  # A vibrant red-orange, reflecting the red panda's striking colour
+      - Circumflex
+      - Tilde
+    color: "#ff4500"  # Orange red for operators and punctuations
   - tokens:
       - Comment
       - MultiLineComment
-    color: "#bbc1c4"  # A cool grey, for a modern touch that doesn't overpower
+    color: "#808080"  # Gray for comments, ensuring they are less prominent
   - tokens:
       - Number
-    color: "#fde4d4"  # A pale pinkish tone, soft and subtle
+    color: "#a52a2a"  # Brown for numbers, offering better contrast
   - tokens:
       - Keyword
-    color: "#7bb274"  # Repeating the fresh green for consistency and balance
+    color: "#008000"  # A more vivid green for keywords

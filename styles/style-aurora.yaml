@@ -1,0 +1,53 @@
+button_margin_percent: 1
+button_padding_percent: 0.5
+code_margin_percent: 1
+code_padding_percent: 1.5
+button_radius: 6
+font_size: 13
+background_color: "#131313"  # Eerie black, like the depths of the night sky[^1^][1]
+close_color: "#FFD700"       # Golden, to represent the stars and add a pop of contrast
+minimize_color: "#00FF00"    # Bright green, to mimic the most common color of the aurora
+maximize_color: "#8A2BE2"    # Blue-violet, for a touch of the less common aurora colors
+line_number_color: "#FFD700" # Golden, for a touch of starlight
+fallback_color: "#D3D3D3"    # Light grey for default text, ensuring readability
+
+token_groups:
+  - tokens:
+      - LeftParen
+      - RightParen
+      - LeftSquare
+      - RightSquare
+      - LeftCurly
+      - RightCurly
+    color: "#7BFFD8"  # Aquamarine, for a consistent aurora effect
+  - tokens:
+      - LessThan
+      - GreaterThan
+      - Equal
+      - Plus
+      - Minus
+      - Asterisk
+      - Slash
+      - Hash
+      - Dot
+      - Comma
+      - Colon
+      - Semicolon
+      - SingleQuote
+      - DoubleQuote
+      - Pipe
+      - Ampersand
+      - Modulo
+      - Circumflex
+      - Tilde
+    color: "#00F260"  # Emerald green, to stand out against the background
+  - tokens:
+      - Comment
+      - MultiLineComment
+    color: "#FFD700"  # Golden, to highlight comments like whispers of wind
+  - tokens:
+      - Number
+    color: "#FF00FF"  # Fuchsia, bright and clear for numbers
+  - tokens:
+      - Keyword
+    color: "#00FFFF"  # Cyan, to contrast well with the dark background and other colors

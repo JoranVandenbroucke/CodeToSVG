@@ -1,11 +1,17 @@
+button_margin_percent: 1
+button_padding_percent: 0.5
+code_margin_percent: 1
+code_padding_percent: 1.5
+button_radius: 6
+font_size: 13
 background_color: "#1f2f22"  # Deep forest green, evoking the game's lush environments
 close_color: "#f07178"       # Soft red, reminiscent of Ori's spirit flame
 minimize_color: "#f78c6c"    # Warm peach, like the glow of spirit lights
 maximize_color: "#c3e88d"    # Light green, reflecting the game's life energy
 line_number_color: "#82aaff" # Light blue, for the spirit trails and water
 fallback_color: "#c7c7c7"    # Light grey for normal text, like moonlight
-font_size: 12
-padding: 0.05
+
+# You can group these how you want, and create as many groups as desired. The tokens should handle everything.
 token_groups:
   - tokens:
       - LeftParen
@@ -33,6 +39,8 @@ token_groups:
       - Pipe
       - Ampersand
       - Modulo
+      - Circumflex
+      - Tilde
     color: "#89ddff"  # Sky blue, for the clear skies above the forest
   - tokens:
       - Comment

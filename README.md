@@ -1,4 +1,5 @@
-Certainly! Here’s an updated version of your README file that includes the new themes and displays them in a 2x3 grid with subtitles:
+Certainly! Here’s an updated version of your README file that includes the new themes and displays them in a 2x3 grid
+with subtitles:
 
 ![build workflow](https://github.com/JoranVandenbroucke/CodeToSVG/actions/workflows/Build.yml/badge.svg)
 
@@ -7,48 +8,18 @@ Certainly! Here’s an updated version of your README file that includes the new
 I originally started this to learn ZIG Lang.
 
 ## Overview
-### Themes Preview
 
-<table>
-  <tr>
-    <td>
-      <img src="svgs/foo-abzu.svg" alt="style abzu" width="300"/>
-      <p align="center">generated with style-abzu.yaml</p>
-    </td>
-    <td>
-      <img src="svgs/foo-bamboo.svg" alt="style bamboo" width="300"/>
-      <p align="center">generated with style-bamboo.yaml</p>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <img src="svgs/foo-dark.svg" alt="style dark" width="300"/>
-      <p align="center">generated with style-dark.yaml</p>
-    </td>
-    <td>
-      <img src="svgs/foo-light.svg" alt="style light" width="300"/>
-      <p align="center">generated with style-light.yaml</p>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <img src="svgs/foo-ori.svg" alt="style ori" width="300"/>
-      <p align="center">generated with style-ori.yaml</p>
-    </td>
-    <td>
-      <img src="svgs/foo-sakura.svg" alt="style sakura" width="300"/>
-      <p align="center">generated with style-sakura.yaml</p>
-    </td>
-  </tr>
-</table>
-
-This program is a C++ to SVG converter. It takes C++ code as input and generates a corresponding SVG (Scalable Vector Graphics) image. This can be particularly useful for visualizing code flow, creating documentation, or sharing your code in a more visual and engaging way.
+This program is a C++ to SVG converter. It takes C++ code as input and generates a corresponding SVG (Scalable Vector
+Graphics) image. This can be particularly useful for visualizing code flow, creating documentation, or sharing your code
+in a more visual and engaging way.
 
 ## Features
 
 - **Code to SVG**: Convert your C++ code into a visually appealing SVG image.
-- **Syntax Highlighting**: The generated SVG will have syntax highlighting similar to most modern code editors, making the code easier to read and understand.
-- **Customizable Themes**: The program supports multiple themes, including light and dark modes, allowing you to switch based on your preference.
+- **Syntax Highlighting**: The generated SVG will have syntax highlighting similar to most modern code editors, making
+  the code easier to read and understand.
+- **Customizable Themes**: The program supports multiple themes, including light and dark modes, allowing you to switch
+  based on your preference.
 
 ## Installation
 
@@ -66,6 +37,61 @@ To convert a C++ file to SVG, use the following command:
 ./CodeToSVG -f input.cpp -o output.svg -s style.yml
 ```
 
+### Themes Preview
+
+<table>
+  <tr>
+    <td>
+      <img src="svgs/foo-dark.svg" alt="style dark" width="300"/>
+      <p align="center">generated with style-dark.yaml</p>
+    </td>
+    <td>
+      <img src="svgs/foo-light.svg" alt="style light" width="300"/>
+      <p align="center">generated with style-light.yaml</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="svgs/foo-abzu.svg" alt="style abzu" width="300"/>
+      <p align="center">generated with style-abzu.yaml</p>
+    </td>
+    <td>
+      <img src="svgs/foo-gris.svg" alt="style gris" width="300"/>
+      <p align="center">generated with style-gris.yaml</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="svgs/foo-ori.svg" alt="style ori and the blind forest" width="300"/>
+      <p align="center">generated with style-ori.yaml</p>
+    </td>
+    <td>
+      <img src="svgs/foo-stardew.svg" alt="style stardew valey" width="300"/>
+      <p align="center">generated with style-stardew.yaml</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="svgs/foo-aurora.svg" alt="style aurora borealis" width="300"/>
+      <p align="center">generated with style-aurora.yaml</p>
+    </td>
+    <td>
+      <img src="svgs/foo-bamboo.svg" alt="style bamboo" width="300"/>
+      <p align="center">generated with style-bamboo.yaml</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="svgs/foo-nocturne.svg" alt="style night garden" width="300"/>
+      <p align="center">generated with style-nocturne.yaml</p>
+    </td>
+    <td>
+      <img src="svgs/foo-sakura.svg" alt="style sakura" width="300"/>
+      <p align="center">generated with style-sakura.yaml</p>
+    </td>
+  </tr>
+</table>
+
 ## Help Wanted
 
 We are looking for contributions to improve this project in the following areas:
@@ -78,6 +104,7 @@ We are looking for contributions to improve this project in the following areas:
 - Making it compatible with more languages than just C++
 - Providing more styles
 - Writing tests to ensure this program runs correctly
+
 ```
 
 This updated README includes a 2x3 grid showing all the themes with appropriate subtitles. Let me know if you need any further adjustments!

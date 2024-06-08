@@ -1,253 +1,83 @@
-<svg width="780" height="569" xmlns="http://www.w3.org/2000/svg">
-    <rect x="0" y="0" width="780" height="569" rx="20" fill="#f5e9ea" />
-    <circle cx="26" cy="26" r="6" fill="#ff8c99" />
+<svg width="574.5" height="828.5" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="574.5" height="828.5" rx="20" fill="#fff0f1" />
+    <circle cx="24" cy="30" r="6" fill="#ff8c99" />
     <!-- Orange Button -->
-    <circle cx="46" cy="26" r="6" fill="#7bb274" />
+    <circle cx="48" cy="30" r="6" fill="#86c77b" />
     <!-- Green Button -->
-    <circle cx="66" cy="26" r="6" fill="#f7b2b7" />
-    <text fill="#6a8e7f" x="26" y="64" font-size="12">1.</text>
-    <text fill="#6a8e7f" x="26" y="76" font-size="12">2.</text>
-    <text fill="#6a8e7f" x="26" y="88" font-size="12">3.</text>
-    <text fill="#6a8e7f" x="26" y="100" font-size="12">4.</text>
-    <text fill="#6a8e7f" x="26" y="112" font-size="12">5.</text>
-    <text fill="#6a8e7f" x="26" y="124" font-size="12">6.</text>
-    <text fill="#6a8e7f" x="26" y="136" font-size="12">7.</text>
-    <text fill="#6a8e7f" x="26" y="148" font-size="12">8.</text>
-    <text fill="#6a8e7f" x="26" y="160" font-size="12">9.</text>
-    <text fill="#6a8e7f" x="26" y="172" font-size="12">10.</text>
-    <text fill="#6a8e7f" x="26" y="184" font-size="12">11.</text>
-    <text fill="#6a8e7f" x="26" y="196" font-size="12">12.</text>
-    <text fill="#6a8e7f" x="26" y="208" font-size="12">13.</text>
-    <text fill="#6a8e7f" x="26" y="220" font-size="12">14.</text>
-    <text fill="#6a8e7f" x="26" y="232" font-size="12">15.</text>
-    <text fill="#6a8e7f" x="26" y="244" font-size="12">16.</text>
-    <text fill="#6a8e7f" x="26" y="256" font-size="12">17.</text>
-    <text fill="#6a8e7f" x="26" y="268" font-size="12">18.</text>
-    <text fill="#6a8e7f" x="26" y="280" font-size="12">19.</text>
-    <text fill="#6a8e7f" x="26" y="292" font-size="12">20.</text>
-    <text fill="#6a8e7f" x="26" y="304" font-size="12">21.</text>
-    <text fill="#6a8e7f" x="26" y="316" font-size="12">22.</text>
-    <text fill="#6a8e7f" x="26" y="328" font-size="12">23.</text>
-    <text fill="#6a8e7f" x="26" y="340" font-size="12">24.</text>
-    <text fill="#6a8e7f" x="26" y="352" font-size="12">25.</text>
-    <text fill="#6a8e7f" x="26" y="364" font-size="12">26.</text>
-    <text fill="#6a8e7f" x="26" y="376" font-size="12">27.</text>
-    <text fill="#6a8e7f" x="26" y="388" font-size="12">28.</text>
-    <text fill="#6a8e7f" x="26" y="400" font-size="12">29.</text>
-    <text fill="#6a8e7f" x="26" y="412" font-size="12">30.</text>
-    <text fill="#6a8e7f" x="26" y="424" font-size="12">31.</text>
-    <text fill="#6a8e7f" x="26" y="436" font-size="12">32.</text>
-    <text fill="#6a8e7f" x="26" y="448" font-size="12">33.</text>
-    <text fill="#6a8e7f" x="26" y="460" font-size="12">34.</text>
-    <text fill="#6a8e7f" x="26" y="472" font-size="12">35.</text>
-    <text fill="#6a8e7f" x="26" y="484" font-size="12">36.</text>
-    <text fill="#6a8e7f" x="26" y="496" font-size="12">37.</text>
-    <text fill="#6a8e7f" x="26" y="508" font-size="12">38.</text>
-    <text fill="#6a8e7f" x="26" y="520" font-size="12">39.</text>
-    <text fill="#6a8e7f" x="52" y="64" font-size="12">
-<tspan fill="#ffadc6">#</tspan><tspan fill="#504a4b">include</tspan>
-<tspan fill="#ffadc6">&lt;</tspan><tspan fill="#504a4b">iostream</tspan>
-<tspan fill="#ffadc6">&gt;</tspan>
-</text>
-    <text fill="#6a8e7f" x="52" y="88" font-size="12">
-<tspan fill="#7bb274">enum</tspan>
-<tspan fill="#7bb274">class</tspan>
-<tspan fill="#504a4b">myEnum</tspan>
-<tspan fill="#f7b2b7">{</tspan>
-</text>
-    <text fill="#6a8e7f" x="100" y="100" font-size="12">
-<tspan fill="#504a4b">First</tspan>
-<tspan fill="#ffadc6">,</tspan>
-</text>
-    <text fill="#6a8e7f" x="100" y="112" font-size="12">
-<tspan fill="#504a4b">Second</tspan>
-</text>
-    <text fill="#6a8e7f" x="52" y="124" font-size="12">
-<tspan fill="#f7b2b7">}</tspan><tspan fill="#ffadc6">;</tspan>
-</text>
-    <text fill="#6a8e7f" x="52" y="136" font-size="12">
-<tspan fill="#7bb274">struct</tspan>
-<tspan fill="#504a4b">myStruct</tspan>
-<tspan fill="#f7b2b7">{</tspan>
-</text>
-    <text fill="#6a8e7f" x="100" y="148" font-size="12">
-<tspan fill="#7bb274">int</tspan>
-<tspan fill="#504a4b">id</tspan>
-<tspan fill="#ffadc6">;</tspan>
-</text>
-    <text fill="#6a8e7f" x="100" y="160" font-size="12">
-<tspan fill="#7bb274">char</tspan>
-<tspan fill="#504a4b">name</tspan>
-<tspan fill="#ffadc6">;</tspan>
-</text>
-    <text fill="#6a8e7f" x="52" y="172" font-size="12">
-<tspan fill="#f7b2b7">}</tspan>
-</text>
-    <text fill="#6a8e7f" x="52" y="184" font-size="12">
-
-<tspan fill="#7bb274">class</tspan>
-<tspan fill="#504a4b">myClass</tspan>
-<tspan fill="#f7b2b7">{</tspan>
-</text>
-    <text fill="#6a8e7f" x="52" y="196" font-size="12">
-<tspan fill="#7bb274">public</tspan>
-<tspan fill="#ffadc6">:</tspan>
-</text>
-    <text fill="#6a8e7f" x="100" y="208" font-size="12">
-<tspan fill="#504a4b">myClass</tspan>
-<tspan fill="#f7b2b7">(</tspan><tspan fill="#f7b2b7">)</tspan>
-<tspan fill="#ffadc6">=</tspan>
-<tspan fill="#7bb274">default</tspan>
-<tspan fill="#ffadc6">;</tspan>
-</text>
-    <text fill="#6a8e7f" x="100" y="220" font-size="12">
-<tspan fill="#7bb274">void</tspan>
-<tspan fill="#504a4b">display</tspan>
-<tspan fill="#f7b2b7">(</tspan><tspan fill="#f7b2b7">)</tspan><tspan fill="#f7b2b7">{</tspan>
-</text>
-    <text fill="#6a8e7f" x="148" y="232" font-size="12">
-<tspan fill="#504a4b">std</tspan>
-<tspan fill="#ffadc6">:</tspan><tspan fill="#ffadc6">:</tspan><tspan fill="#504a4b">cout</tspan>
-<tspan fill="#ffadc6">&lt;</tspan><tspan fill="#ffadc6">&lt;</tspan>
-<tspan fill="#ffadc6">&quot;</tspan><tspan fill="#504a4b">Inside</tspan>
-<tspan fill="#504a4b">myClass</tspan>
-<tspan fill="#504a4b">\</tspan><tspan fill="#504a4b">n</tspan><tspan fill="#ffadc6">&quot;</tspan><tspan fill="#ffadc6">;</tspan>
-</text>
-    <text fill="#6a8e7f" x="100" y="244" font-size="12">
-<tspan fill="#f7b2b7">}</tspan>
-</text>
-    <text fill="#6a8e7f" x="52" y="256" font-size="12">
-<tspan fill="#f7b2b7">}</tspan>
-</text>
-    <text fill="#6a8e7f" x="52" y="280" font-size="12">
-
-<tspan fill="#7bb274">int</tspan>
-<tspan fill="#504a4b">main</tspan>
-<tspan fill="#f7b2b7">(</tspan><tspan fill="#f7b2b7">)</tspan><tspan fill="#f7b2b7">{</tspan>
-</text>
-    <text fill="#6a8e7f" x="100" y="292" font-size="12">
-<tspan fill="#7bb274">constexpr</tspan>
-<tspan fill="#7bb274">int</tspan>
-<tspan fill="#504a4b">number</tspan>
-<tspan fill="#ffadc6">=</tspan>
-<tspan fill="#de3163">10</tspan>
-<tspan fill="#ffadc6">;</tspan>
-</text>
-    <text fill="#6a8e7f" x="100" y="304" font-size="12">
-<tspan fill="#7bb274">constexpr</tspan>
-<tspan fill="#7bb274">char</tspan>
-<tspan fill="#504a4b">single_quote</tspan>
-<tspan fill="#ffadc6">=</tspan>
-<tspan fill="#ffadc6">&apos;</tspan><tspan fill="#504a4b">\</tspan><tspan fill="#ffadc6">&apos;</tspan><tspan fill="#ffadc6">&apos;</tspan><tspan fill="#ffadc6">;</tspan>
-</text>
-    <text fill="#6a8e7f" x="100" y="316" font-size="12">
-<tspan fill="#89c0e4">// this is a comment</tspan>
-</text>
-    <text fill="#6a8e7f" x="88" y="328" font-size="12">
-<tspan fill="#ffadc6">/</tspan><tspan fill="#ffadc6">*</tspan>
-<tspan fill="#504a4b">This</tspan>
-<tspan fill="#504a4b">is</tspan>
-</text>
-    <text fill="#6a8e7f" x="136" y="340" font-size="12">
-<tspan fill="#504a4b">a</tspan>
-<tspan fill="#504a4b">multi</tspan>
-<tspan fill="#ffadc6">-</tspan><tspan fill="#504a4b">line</tspan>
-</text>
-    <text fill="#6a8e7f" x="136" y="352" font-size="12">
-<tspan fill="#504a4b">comment</tspan>
-<tspan fill="#ffadc6">*</tspan><tspan fill="#ffadc6">/</tspan>
-</text>
-    <text fill="#6a8e7f" x="100" y="364" font-size="12">
-<tspan fill="#504a4b">std</tspan>
-<tspan fill="#ffadc6">:</tspan><tspan fill="#ffadc6">:</tspan><tspan fill="#504a4b">cout</tspan>
-<tspan fill="#ffadc6">&lt;</tspan><tspan fill="#ffadc6">&lt;</tspan>
-<tspan fill="#ffadc6">&quot;</tspan><tspan fill="#504a4b">The</tspan>
-<tspan fill="#504a4b">number</tspan>
-<tspan fill="#504a4b">is</tspan>
-<tspan fill="#ffadc6">:</tspan>
-<tspan fill="#ffadc6">&quot;</tspan>
-<tspan fill="#ffadc6">&lt;</tspan><tspan fill="#ffadc6">&lt;</tspan>
-<tspan fill="#504a4b">number</tspan>
-<tspan fill="#ffadc6">&lt;</tspan><tspan fill="#ffadc6">&lt;</tspan>
-<tspan fill="#ffadc6">&apos;</tspan><tspan fill="#504a4b">\</tspan><tspan fill="#504a4b">n</tspan><tspan fill="#ffadc6">&apos;</tspan><tspan fill="#ffadc6">;</tspan>
-</text>
-    <text fill="#6a8e7f" x="100" y="388" font-size="12">
-<tspan fill="#7bb274">const</tspan>
-<tspan fill="#7bb274">int</tspan>
-<tspan fill="#504a4b">array</tspan>
-<tspan fill="#f7b2b7">[</tspan><tspan fill="#f7b2b7">]</tspan>
-<tspan fill="#ffadc6">=</tspan>
-<tspan fill="#f7b2b7">{</tspan><tspan fill="#de3163">1</tspan><tspan fill="#ffadc6">,</tspan><tspan fill="#de3163">2</tspan><tspan fill="#ffadc6">,</tspan><tspan fill="#de3163">3</tspan><tspan fill="#f7b2b7">}</tspan><tspan fill="#ffadc6">;</tspan>
-</text>
-    <text fill="#6a8e7f" x="100" y="400" font-size="12">
-<tspan fill="#7bb274">const</tspan>
-<tspan fill="#7bb274">int</tspan>
-<tspan fill="#504a4b">value</tspan>
-<tspan fill="#ffadc6">=</tspan>
-<tspan fill="#504a4b">array</tspan>
-<tspan fill="#f7b2b7">[</tspan><tspan fill="#de3163">0</tspan><tspan fill="#f7b2b7">]</tspan>
-<tspan fill="#ffadc6">+</tspan>
-<tspan fill="#504a4b">array</tspan>
-<tspan fill="#f7b2b7">[</tspan><tspan fill="#de3163">1</tspan><tspan fill="#f7b2b7">]</tspan>
-<tspan fill="#ffadc6">+</tspan>
-<tspan fill="#ffadc6">-</tspan><tspan fill="#504a4b">array</tspan>
-<tspan fill="#f7b2b7">[</tspan><tspan fill="#de3163">2</tspan><tspan fill="#f7b2b7">]</tspan><tspan fill="#ffadc6">;</tspan>
-</text>
-    <text fill="#6a8e7f" x="100" y="412" font-size="12">
-<tspan fill="#7bb274">const</tspan>
-<tspan fill="#7bb274">bool</tspan>
-<tspan fill="#504a4b">comparison</tspan>
-<tspan fill="#ffadc6">=</tspan>
-<tspan fill="#f7b2b7">(</tspan><tspan fill="#504a4b">value</tspan>
-<tspan fill="#ffadc6">&gt;</tspan>
-<tspan fill="#504a4b">number</tspan>
-<tspan fill="#f7b2b7">)</tspan><tspan fill="#ffadc6">;</tspan>
-</text>
-    <text fill="#6a8e7f" x="100" y="424" font-size="12">
-<tspan fill="#7bb274">const</tspan>
-<tspan fill="#7bb274">int</tspan>
-<tspan fill="#504a4b">bitwise</tspan>
-<tspan fill="#ffadc6">=</tspan>
-<tspan fill="#504a4b">sum</tspan>
-<tspan fill="#ffadc6">|</tspan>
-<tspan fill="#504a4b">number</tspan>
-<tspan fill="#ffadc6">;</tspan>
-</text>
-    <text fill="#6a8e7f" x="100" y="436" font-size="12">
-<tspan fill="#7bb274">const</tspan>
-<tspan fill="#7bb274">int</tspan>
-<tspan fill="#504a4b">modulo</tspan>
-<tspan fill="#ffadc6">=</tspan>
-<tspan fill="#504a4b">sum</tspan>
-<tspan fill="#ffadc6">%</tspan>
-<tspan fill="#504a4b">number</tspan>
-<tspan fill="#ffadc6">;</tspan>
-</text>
-    <text fill="#6a8e7f" x="100" y="460" font-size="12">
-<tspan fill="#504a4b">myEnum</tspan>
-<tspan fill="#504a4b">e</tspan>
-<tspan fill="#ffadc6">=</tspan>
-<tspan fill="#504a4b">myEnum</tspan>
-<tspan fill="#ffadc6">:</tspan><tspan fill="#ffadc6">:</tspan><tspan fill="#504a4b">FIRST</tspan>
-<tspan fill="#ffadc6">;</tspan>
-</text>
-    <text fill="#6a8e7f" x="100" y="472" font-size="12">
-<tspan fill="#504a4b">myStruct</tspan>
-<tspan fill="#504a4b">s</tspan><tspan fill="#f7b2b7">{</tspan><tspan fill="#de3163">1</tspan><tspan fill="#ffadc6">,</tspan><tspan fill="#ffadc6">&apos;</tspan><tspan fill="#504a4b">a</tspan><tspan fill="#ffadc6">&apos;</tspan><tspan fill="#f7b2b7">}</tspan><tspan fill="#ffadc6">;</tspan>
-</text>
-    <text fill="#6a8e7f" x="100" y="484" font-size="12">
-<tspan fill="#504a4b">myClass</tspan>
-<tspan fill="#504a4b">c</tspan><tspan fill="#f7b2b7">{</tspan><tspan fill="#f7b2b7">}</tspan><tspan fill="#ffadc6">;</tspan>
-</text>
-    <text fill="#6a8e7f" x="100" y="496" font-size="12">
-<tspan fill="#504a4b">c</tspan><tspan fill="#ffadc6">.</tspan><tspan fill="#504a4b">display</tspan>
-<tspan fill="#f7b2b7">(</tspan><tspan fill="#f7b2b7">)</tspan><tspan fill="#ffadc6">;</tspan>
-</text>
-    <text fill="#6a8e7f" x="100" y="508" font-size="12">
-<tspan fill="#7bb274">return</tspan>
-<tspan fill="#de3163">0</tspan><tspan fill="#ffadc6">;</tspan>
-</text>
-    <text fill="#6a8e7f" x="52" y="520" font-size="12">
-<tspan fill="#f7b2b7">}</tspan>
+    <circle cx="72" cy="30" r="6" fill="#f7b2b7" />
+    <text text-anchor="end" fill="#8a9a85" x="34" y="64" font-size="13">1.</text>
+    <text text-anchor="end" fill="#8a9a85" x="34" y="83" font-size="13">2.</text>
+    <text text-anchor="end" fill="#8a9a85" x="34" y="103" font-size="13">3.</text>
+    <text text-anchor="end" fill="#8a9a85" x="34" y="122" font-size="13">4.</text>
+    <text text-anchor="end" fill="#8a9a85" x="34" y="142" font-size="13">5.</text>
+    <text text-anchor="end" fill="#8a9a85" x="34" y="161" font-size="13">6.</text>
+    <text text-anchor="end" fill="#8a9a85" x="34" y="181" font-size="13">7.</text>
+    <text text-anchor="end" fill="#8a9a85" x="34" y="200" font-size="13">8.</text>
+    <text text-anchor="end" fill="#8a9a85" x="34" y="220" font-size="13">9.</text>
+    <text text-anchor="end" fill="#8a9a85" x="34" y="239" font-size="13">10.</text>
+    <text text-anchor="end" fill="#8a9a85" x="34" y="259" font-size="13">11.</text>
+    <text text-anchor="end" fill="#8a9a85" x="34" y="278" font-size="13">12.</text>
+    <text text-anchor="end" fill="#8a9a85" x="34" y="298" font-size="13">13.</text>
+    <text text-anchor="end" fill="#8a9a85" x="34" y="317" font-size="13">14.</text>
+    <text text-anchor="end" fill="#8a9a85" x="34" y="337" font-size="13">15.</text>
+    <text text-anchor="end" fill="#8a9a85" x="34" y="356" font-size="13">16.</text>
+    <text text-anchor="end" fill="#8a9a85" x="34" y="376" font-size="13">17.</text>
+    <text text-anchor="end" fill="#8a9a85" x="34" y="395" font-size="13">18.</text>
+    <text text-anchor="end" fill="#8a9a85" x="34" y="415" font-size="13">19.</text>
+    <text text-anchor="end" fill="#8a9a85" x="34" y="434" font-size="13">20.</text>
+    <text text-anchor="end" fill="#8a9a85" x="34" y="454" font-size="13">21.</text>
+    <text text-anchor="end" fill="#8a9a85" x="34" y="473" font-size="13">22.</text>
+    <text text-anchor="end" fill="#8a9a85" x="34" y="493" font-size="13">23.</text>
+    <text text-anchor="end" fill="#8a9a85" x="34" y="512" font-size="13">24.</text>
+    <text text-anchor="end" fill="#8a9a85" x="34" y="532" font-size="13">25.</text>
+    <text text-anchor="end" fill="#8a9a85" x="34" y="551" font-size="13">26.</text>
+    <text text-anchor="end" fill="#8a9a85" x="34" y="571" font-size="13">27.</text>
+    <text text-anchor="end" fill="#8a9a85" x="34" y="590" font-size="13">28.</text>
+    <text text-anchor="end" fill="#8a9a85" x="34" y="610" font-size="13">29.</text>
+    <text text-anchor="end" fill="#8a9a85" x="34" y="629" font-size="13">30.</text>
+    <text text-anchor="end" fill="#8a9a85" x="34" y="649" font-size="13">31.</text>
+    <text text-anchor="end" fill="#8a9a85" x="34" y="668" font-size="13">32.</text>
+    <text text-anchor="end" fill="#8a9a85" x="34" y="688" font-size="13">33.</text>
+    <text text-anchor="end" fill="#8a9a85" x="34" y="707" font-size="13">34.</text>
+    <text text-anchor="end" fill="#8a9a85" x="34" y="727" font-size="13">35.</text>
+    <text text-anchor="end" fill="#8a9a85" x="34" y="746" font-size="13">36.</text>
+    <text text-anchor="end" fill="#8a9a85" x="34" y="766" font-size="13">37.</text>
+    <text text-anchor="end" fill="#8a9a85" x="34" y="785" font-size="13">38.</text>
+    <text text-anchor="end" fill="#8a9a85" x="34" y="805" font-size="13">39.</text>
+    <text fill="#8a9a85" x="46" y="64" font-size="13"><tspan fill="#ffadc6"> #</tspan><tspan fill="#504a4b">include</tspan><tspan fill="#ffadc6"> &lt;</tspan><tspan fill="#504a4b">iostream</tspan><tspan fill="#ffadc6">&gt;</tspan>    </text>
+    <text fill="#504a4b" x="46" y="103" font-size="13"><tspan fill="#7bb274">enum</tspan><tspan fill="#7bb274"> class</tspan><tspan fill="#504a4b"> myEnum</tspan><tspan fill="#fabebe">{</tspan>    </text>
+    <text fill="#504a4b" x="72" y="122.5" font-size="13"><tspan fill="#504a4b">First</tspan><tspan fill="#ffadc6">,</tspan>    </text>
+    <text fill="#504a4b" x="72" y="142" font-size="13"><tspan fill="#504a4b">Second</tspan>    </text>
+    <text fill="#504a4b" x="46" y="161.5" font-size="13"><tspan fill="#fabebe">}</tspan><tspan fill="#ffadc6">;</tspan>    </text>
+    <text fill="#504a4b" x="46" y="181" font-size="13"><tspan fill="#7bb274">struct</tspan><tspan fill="#504a4b"> myStruct</tspan><tspan fill="#fabebe">{</tspan>    </text>
+    <text fill="#504a4b" x="72" y="200.5" font-size="13"><tspan fill="#7bb274">int</tspan><tspan fill="#504a4b"> id</tspan><tspan fill="#ffadc6">;</tspan>    </text>
+    <text fill="#504a4b" x="72" y="220" font-size="13"><tspan fill="#504a4b">char</tspan><tspan fill="#504a4b"> name</tspan><tspan fill="#ffadc6">;</tspan>    </text>
+    <text fill="#504a4b" x="46" y="239.5" font-size="13"><tspan fill="#fabebe">}</tspan>    </text>
+    <text fill="#504a4b" x="46" y="259" font-size="13"><tspan fill="#7bb274">class</tspan><tspan fill="#504a4b"> myClass</tspan><tspan fill="#fabebe">{</tspan>    </text>
+    <text fill="#504a4b" x="46" y="278.5" font-size="13"><tspan fill="#7bb274">public</tspan><tspan fill="#ffadc6">:</tspan>    </text>
+    <text fill="#504a4b" x="72" y="298" font-size="13"><tspan fill="#504a4b">myClass</tspan><tspan fill="#fabebe">(</tspan><tspan fill="#fabebe">)</tspan><tspan fill="#ffadc6"> =</tspan><tspan fill="#7bb274"> default</tspan><tspan fill="#ffadc6">;</tspan>    </text>
+    <text fill="#504a4b" x="72" y="317.5" font-size="13"><tspan fill="#7bb274">void</tspan><tspan fill="#504a4b"> display</tspan><tspan fill="#fabebe">(</tspan><tspan fill="#fabebe">)</tspan><tspan fill="#fabebe">{</tspan>    </text>
+    <text fill="#504a4b" x="98" y="337" font-size="13"><tspan fill="#504a4b">std</tspan><tspan fill="#ffadc6">:</tspan><tspan fill="#ffadc6">:</tspan><tspan fill="#504a4b">cout</tspan><tspan fill="#ffadc6"> &lt;</tspan><tspan fill="#ffadc6">&lt;</tspan><tspan fill="#ffadc6"> &quot;</tspan><tspan fill="#504a4b">Inside</tspan><tspan fill="#504a4b"> myClass</tspan><tspan fill="#504a4b">\</tspan><tspan fill="#504a4b">n</tspan><tspan fill="#ffadc6">&quot;</tspan><tspan fill="#ffadc6">;</tspan>    </text>
+    <text fill="#504a4b" x="72" y="356.5" font-size="13"><tspan fill="#fabebe">}</tspan>    </text>
+    <text fill="#504a4b" x="46" y="376" font-size="13"><tspan fill="#fabebe">}</tspan>    </text>
+    <text fill="#504a4b" x="46" y="415" font-size="13"><tspan fill="#7bb274">int</tspan><tspan fill="#504a4b"> main</tspan><tspan fill="#fabebe">(</tspan><tspan fill="#fabebe">)</tspan><tspan fill="#fabebe">{</tspan>    </text>
+    <text fill="#504a4b" x="72" y="434.5" font-size="13"><tspan fill="#7bb274">constexpr</tspan><tspan fill="#7bb274"> int</tspan><tspan fill="#504a4b"> number</tspan><tspan fill="#ffadc6"> =</tspan><tspan fill="#c71585"> 10</tspan><tspan fill="#ffadc6">;</tspan>    </text>
+    <text fill="#504a4b" x="72" y="454" font-size="13"><tspan fill="#7bb274">constexpr</tspan><tspan fill="#504a4b"> char</tspan><tspan fill="#504a4b"> single_quote</tspan><tspan fill="#ffadc6"> =</tspan><tspan fill="#ffadc6"> &apos;</tspan><tspan fill="#504a4b">\</tspan><tspan fill="#ffadc6">&apos;</tspan><tspan fill="#ffadc6">&apos;</tspan><tspan fill="#ffadc6">;</tspan>    </text>
+    <text fill="#504a4b" x="72" y="473.5" font-size="13"><tspan fill="#a1cbe6">// this is a comment</tspan>    </text>
+    <text fill="#504a4b" x="65.5" y="493" font-size="13"><tspan fill="#ffadc6">/</tspan><tspan fill="#ffadc6">*</tspan><tspan fill="#504a4b"> This</tspan><tspan fill="#504a4b"> is</tspan>    </text>
+    <text fill="#504a4b" x="91.5" y="512.5" font-size="13"><tspan fill="#504a4b">a</tspan><tspan fill="#504a4b"> multi</tspan><tspan fill="#ffadc6">-</tspan><tspan fill="#504a4b">line</tspan>    </text>
+    <text fill="#504a4b" x="91.5" y="532" font-size="13"><tspan fill="#504a4b">comment</tspan><tspan fill="#ffadc6"> *</tspan><tspan fill="#ffadc6">/</tspan>    </text>
+    <text fill="#504a4b" x="72" y="551.5" font-size="13"><tspan fill="#504a4b">std</tspan><tspan fill="#ffadc6">:</tspan><tspan fill="#ffadc6">:</tspan><tspan fill="#504a4b">cout</tspan><tspan fill="#ffadc6"> &lt;</tspan><tspan fill="#ffadc6">&lt;</tspan><tspan fill="#ffadc6"> &quot;</tspan><tspan fill="#504a4b">The</tspan><tspan fill="#504a4b"> number</tspan><tspan fill="#504a4b"> is</tspan><tspan fill="#ffadc6">:</tspan><tspan fill="#ffadc6"> &quot;</tspan><tspan fill="#ffadc6"> &lt;</tspan><tspan fill="#ffadc6">&lt;</tspan><tspan fill="#504a4b"> number</tspan><tspan fill="#ffadc6"> &lt;</tspan><tspan fill="#ffadc6">&lt;</tspan><tspan fill="#ffadc6"> &apos;</tspan><tspan fill="#504a4b">\</tspan><tspan fill="#504a4b">n</tspan><tspan fill="#ffadc6">&apos;</tspan><tspan fill="#ffadc6">;</tspan>    </text>
+    <text fill="#504a4b" x="72" y="590.5" font-size="13"><tspan fill="#7bb274">const</tspan><tspan fill="#7bb274"> int</tspan><tspan fill="#504a4b"> array</tspan><tspan fill="#fabebe">[</tspan><tspan fill="#fabebe">]</tspan><tspan fill="#ffadc6"> =</tspan><tspan fill="#fabebe"> {</tspan><tspan fill="#c71585">1</tspan><tspan fill="#ffadc6">,</tspan><tspan fill="#c71585">2</tspan><tspan fill="#ffadc6">,</tspan><tspan fill="#c71585">3</tspan><tspan fill="#fabebe">}</tspan><tspan fill="#ffadc6">;</tspan>    </text>
+    <text fill="#504a4b" x="72" y="610" font-size="13"><tspan fill="#7bb274">const</tspan><tspan fill="#7bb274"> int</tspan><tspan fill="#504a4b"> value</tspan><tspan fill="#ffadc6"> =</tspan><tspan fill="#504a4b"> array</tspan><tspan fill="#fabebe">[</tspan><tspan fill="#c71585">0</tspan><tspan fill="#fabebe">]</tspan><tspan fill="#ffadc6"> +</tspan><tspan fill="#504a4b"> array</tspan><tspan fill="#fabebe">[</tspan><tspan fill="#c71585">1</tspan><tspan fill="#fabebe">]</tspan><tspan fill="#ffadc6"> +</tspan><tspan fill="#ffadc6"> -</tspan><tspan fill="#504a4b">array</tspan><tspan fill="#fabebe">[</tspan><tspan fill="#c71585">2</tspan><tspan fill="#fabebe">]</tspan><tspan fill="#ffadc6">;</tspan>    </text>
+    <text fill="#504a4b" x="72" y="629.5" font-size="13"><tspan fill="#7bb274">const</tspan><tspan fill="#7bb274"> bool</tspan><tspan fill="#504a4b"> comparison</tspan><tspan fill="#ffadc6"> =</tspan><tspan fill="#fabebe"> (</tspan><tspan fill="#504a4b">value</tspan><tspan fill="#ffadc6"> &gt;</tspan><tspan fill="#504a4b"> number</tspan><tspan fill="#fabebe">)</tspan><tspan fill="#ffadc6">;</tspan>    </text>
+    <text fill="#504a4b" x="72" y="649" font-size="13"><tspan fill="#7bb274">const</tspan><tspan fill="#7bb274"> int</tspan><tspan fill="#504a4b"> bitwise</tspan><tspan fill="#ffadc6"> =</tspan><tspan fill="#504a4b"> sum</tspan><tspan fill="#ffadc6"> |</tspan><tspan fill="#504a4b"> number</tspan><tspan fill="#ffadc6">;</tspan>    </text>
+    <text fill="#504a4b" x="72" y="668.5" font-size="13"><tspan fill="#7bb274">const</tspan><tspan fill="#7bb274"> int</tspan><tspan fill="#504a4b"> modulo</tspan><tspan fill="#ffadc6"> =</tspan><tspan fill="#504a4b"> sum</tspan><tspan fill="#ffadc6"> %</tspan><tspan fill="#504a4b"> number</tspan><tspan fill="#ffadc6">;</tspan>    </text>
+    <text fill="#504a4b" x="72" y="707.5" font-size="13"><tspan fill="#504a4b">myEnum</tspan><tspan fill="#504a4b"> e</tspan><tspan fill="#ffadc6"> =</tspan><tspan fill="#504a4b"> myEnum</tspan><tspan fill="#ffadc6">:</tspan><tspan fill="#ffadc6">:</tspan><tspan fill="#504a4b">FIRST</tspan><tspan fill="#ffadc6">;</tspan>    </text>
+    <text fill="#504a4b" x="72" y="727" font-size="13"><tspan fill="#504a4b">myStruct</tspan><tspan fill="#504a4b"> s</tspan><tspan fill="#fabebe">{</tspan><tspan fill="#c71585">1</tspan><tspan fill="#ffadc6">,</tspan><tspan fill="#ffadc6">&apos;</tspan><tspan fill="#504a4b">a</tspan><tspan fill="#ffadc6">&apos;</tspan><tspan fill="#fabebe">}</tspan><tspan fill="#ffadc6">;</tspan>    </text>
+    <text fill="#504a4b" x="72" y="746.5" font-size="13"><tspan fill="#504a4b">myClass</tspan><tspan fill="#504a4b"> c</tspan><tspan fill="#fabebe">{</tspan><tspan fill="#fabebe">}</tspan><tspan fill="#ffadc6">;</tspan>    </text>
+    <text fill="#504a4b" x="72" y="766" font-size="13"><tspan fill="#504a4b">c</tspan><tspan fill="#ffadc6">.</tspan><tspan fill="#504a4b">display</tspan><tspan fill="#fabebe">(</tspan><tspan fill="#fabebe">)</tspan><tspan fill="#ffadc6">;</tspan>    </text>
+    <text fill="#504a4b" x="72" y="785.5" font-size="13"><tspan fill="#7bb274">return</tspan><tspan fill="#c71585"> 0</tspan><tspan fill="#ffadc6">;</tspan>    </text>
+    <text fill="#504a4b" x="46" y="805" font-size="13"><tspan fill="#fabebe">}</tspan>
 </text>
 </svg>

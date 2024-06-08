@@ -1,11 +1,16 @@
-background_color: "#1a1a1a"  # Deep black for contrast
-close_color: "#ff0080"       # Neon pink
-minimize_color: "#00ff00"    # Bright green
-maximize_color: "#00ffff"    # Cyan
-line_number_color: "#808080" # Grey for neutrality
-fallback_color: "#d3d3d3"    # Light grey for default text
-font_size: 12
-padding: 0.05
+button_margin_percent: 1
+button_padding_percent: 0.5
+code_margin_percent: 1
+code_padding_percent: 1.5
+button_radius: 6
+font_size: 13
+background_color: "#1a1a1a"  # Deep black for contrast, like the depths of the forest
+close_color: "#ff4500"       # Soft red, reminiscent of Ori's spirit flame
+minimize_color: "#32cd32"    # Lush green, inspired by the forest's life
+maximize_color: "#4682b4"    # Steel blue, for the clear skies above the forest
+line_number_color: "#f8f8ff" # Ghost white, for a touch of mysticism
+fallback_color: "#dcdcdc"    # Light slate gray, neutral and balanced
+
 token_groups:
   - tokens:
       - LeftParen
@@ -14,7 +19,7 @@ token_groups:
       - RightSquare
       - LeftCurly
       - RightCurly
-    color: "#ff4500"  # Orange red
+    color: "#ffa07a"  # Light Salmon, soft and inviting
   - tokens:
       - LessThan
       - GreaterThan
@@ -33,14 +38,16 @@ token_groups:
       - Pipe
       - Ampersand
       - Modulo
-    color: "#7fff00"  # Chartreuse
+      - Circumflex
+      - Tilde
+    color: "#00fa9a"  # Medium spring green, vibrant and full of energy
   - tokens:
       - Comment
       - MultiLineComment
-    color: "#ffa500"  # Orange
+    color: "#f0e68c"  # Khaki, to blend in softly with the background
   - tokens:
       - Number
-    color: "#ff69b4"  # Hot pink
+    color: "#ba55d3"  # Medium orchid, for a touch of magic
   - tokens:
       - Keyword
-    color: "#9400d3"  # Dark violet
+    color: "#7b68ee"  # Medium slate blue, to stand out with wisdom
