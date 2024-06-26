@@ -40,6 +40,7 @@ token_groups:
       - Modulo
       - Circumflex
       - Tilde
+      - Exclamation
     color: "#ffadc6"  # Light pink, for a subtle differentiation
   - tokens:
       - Comment

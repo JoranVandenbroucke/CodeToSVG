@@ -34,6 +34,7 @@ pub const Kind = enum {
     Backslash,
     Circumflex,
     Tilde,
+    Exclamation,
     End,
     Unexpected,
 };
@@ -187,6 +188,7 @@ pub const Lexer = struct {
             '\\' => self.atom(Kind.Backslash),
             '^' => self.atom(Kind.Circumflex),
             '~' => self.atom(Kind.Tilde),
+            '!' => self.atom(Kind.Exclamation),
             else => self.atom(Kind.Unexpected),
         };
     }

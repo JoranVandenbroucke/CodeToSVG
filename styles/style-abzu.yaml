@@ -41,6 +41,7 @@ token_groups:
       - Modulo
       - Circumflex
       - Tilde
+      - Exclamation
     color: "#add8e6"  # Light blue, for the serenity of the underwater world
   - tokens:
       - Comment

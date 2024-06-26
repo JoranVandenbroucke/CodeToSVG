@@ -41,6 +41,7 @@ token_groups:
       - Modulo
       - Circumflex
       - Tilde
+      - Exclamation
     color: "#89ddff"  # Sky blue, for the clear skies above the forest
   - tokens:
       - Comment

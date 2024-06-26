@@ -40,6 +40,7 @@ token_groups:
       - Modulo
       - Circumflex
       - Tilde
+      - Exclamation
     color: "#00F260"  # Emerald green, to stand out against the background
   - tokens:
       - Comment

@@ -41,6 +41,7 @@ token_groups:
       - Modulo
       - Circumflex
       - Tilde
+      - Exclamation
     color: "#ff4500"  # Orange red for operators and punctuations
   - tokens:
       - Comment
