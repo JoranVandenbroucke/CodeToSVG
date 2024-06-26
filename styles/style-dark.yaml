@@ -40,6 +40,7 @@ token_groups:
       - Modulo
       - Circumflex
       - Tilde
+      - Exclamation
     color: "#00fa9a"  # Medium spring green, vibrant and full of energy
   - tokens:
       - Comment
