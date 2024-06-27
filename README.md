@@ -113,5 +113,3 @@ We are looking for contributions to improve this project in the following areas:
 - Writing tests to ensure this program runs correctly
 
 ```
-
-This updated README includes a 2x3 grid showing all the themes with appropriate subtitles. Let me know if you need any further adjustments!
