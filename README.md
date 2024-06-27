@@ -1,6 +1,3 @@
-Certainly! Here’s an updated version of your README file that includes the new themes and displays them in a 2x3 grid
-with subtitles:
-
 ![build workflow](https://github.com/JoranVandenbroucke/CodeToSVG/actions/workflows/Build.yml/badge.svg)
 
 # C++ to SVG Converter
@@ -111,5 +108,3 @@ We are looking for contributions to improve this project in the following areas:
 - Making it compatible with more languages than just C++
 - Providing more styles
 - Writing tests to ensure this program runs correctly
-
-```
